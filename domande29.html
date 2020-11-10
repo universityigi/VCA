@@ -1,0 +1,176 @@
+<!-- 29 -->
+<html><HEAD><TITLE>Test VCA - test numero 29</TITLE><head><body>
+<center><h2>Test VCA - test numero 29</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>B</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>C</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		La funzione n! &egrave;
+
+<ul>
+<li><b>A</b> 		O(2<sup>n</sup>)
+</li>
+<li><b>B</b> 		O(log<sub>2</sub> n)
+</li>
+<li><b>C</b> 		O(n<sup>2</sup>)
+</li>
+<li><b>D</b> 		O(n<sup>n</sup>)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; errata?
+
+<ul>
+<li><b>A</b> 		a &or; b &equiv; &not;(&not;a &and; &not;b)
+</li>
+<li><b>B</b> 		a &#x27F6; b &equiv; &not;a &or; b
+</li>
+<li><b>C</b> 		a &and; b &equiv; &not;(&not;a &or; &not;b)
+</li>
+<li><b>D</b> 		a &#x27F7; b &equiv; &not;a &or; &not;b
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sull&#x27;operazione di full outer-join in SQL &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		Quando i due operandi non hanno valori nulli, il full outer-join coincide con il join dei due operandi; 
+</li>
+<li><b>B</b> 		Il full outer join si pu&ograve; eseguire solo se i due operandi hanno lo stesso schema di relazione.
+</li>
+<li><b>C</b> 		L&#x27;outer-join di due relazioni &egrave; una relazione in cui tutte le tuple del primo operando sono combinate con almeno una tupla del secondo operando;
+</li>
+<li><b>D</b> 		L&#x27;operazione di full outer-join elimina i duplicati di una relazione;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Il luogo delle radici permette di individuare una compensazione atta
+
+<ul>
+<li><b>A</b> 		a stabilizzare asintoticamente il sistema complessivo;
+</li>
+<li><b>B</b> 		ad assegnare gli autovalori al sistema complessivo;
+</li>
+<li><b>C</b> 		ad aumentare il margine di fase del sistema complessivo;
+</li>
+<li><b>D</b> 		ad aumentare il margine di guadagno del sistema complessivo. 
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo:
+<pre>
+public static void stampa()	{
+	for (int i=1; i<10; i=i+i) {
+		if (i==5) break;
+		System.out.print (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile dichiarare una variabile nell&#x27;intestazione di un&#x27;istruzione <tt>for</tt>.
+</li>
+<li><b>B</b> 		Il metodo stampa <tt>123456789</tt>
+</li>
+<li><b>C</b> 		Il metodo stampa <tt>124</tt>
+</li>
+<li><b>D</b> 		L&#x27;istruzione <tt>break</tt> all&#x27;interno del metodo <tt>stampa()</tt> non viene mai eseguita.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>B</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>C</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una qualsiasi directory.
+</li>
+<li><b>D</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una qualsiasi directory.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		I parametri delle funzioni di un processo sono memorizzati nel segmento:
+
+<ul>
+<li><b>A</b> 		STACK
+</li>
+<li><b>B</b> 		CODE
+</li>
+<li><b>C</b> 		DATA
+</li>
+<li><b>D</b> 		HEAP
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+		Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		int a[][] = new int[10,10]
+</li>
+<li><b>B</b> 		int [a][] = new int[10][10];
+</li>
+<li><b>C</b> 		int a[][] = new int[10][10];
+</li>
+<li><b>D</b> 		int a[10][10] = new int[][];
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		A cosa serve in una rete in area locale (LAN) un protocollo di accesso multiplo?
+
+<ul>
+<li><b>A</b> 		a velocizzare la comunicazione attraverso una LAN
+</li>
+<li><b>B</b> 		a permettere ad utenti differenti la condivisione di una risorsa comune (es. canale di comunicazione) 
+</li>
+<li><b>C</b> 		ad evitare che utenti differenti collidano durante la trasmissione su una risorsa comune (es. canale di comunicazione)
+</li>
+<li><b>D</b> 		ad instradare le unit&agrave; informative nella LAN
+</li>
+</ul>
+</body></html>

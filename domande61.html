@@ -1,0 +1,235 @@
+<!-- 61 -->
+<html><HEAD><TITLE>Test VCA - test numero 61</TITLE><head><body>
+<center><h2>Test VCA - test numero 61</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Un processo &egrave; stabilizzabile asintoticamente con reazione dall&#x27;uscita
+
+<ul>
+<li><b>A</b> 		se e solo se tutti i suoi autovalori irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti i suoi autovalori raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti i suoi autovalori sono raggiungibili ed osservabili.
+</li>
+<li><b>D</b> 		se e solo se tutti i suoi autovalori sono a parte reale negativa;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul modello Entit&agrave;-Relazione &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Gli identificatori si possono definire sia sulle entit&agrave; sia sugli attributi;
+</li>
+<li><b>B</b> 		Un identificatore di una relazione pu&ograve; comprendere sia i ruoli coinvolti in tale relazione sia gli attributi definiti per tale relazione
+</li>
+<li><b>C</b> 		Solo sulle entit&agrave; si possono definire gli identificatori;
+</li>
+<li><b>D</b> 		Un identificatore si pu&ograve; definire su una relazione solo se tale relazione non &egrave; in relazione ISA con un&#x27;altra.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>B</b> L&#x27;esecuzione del metodo non termina.
+</li>
+<li><b>C</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>D</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; <b>falsa</b>?
+
+<ul>
+<li><b>A</b> 		n + log n &isin; O(log n)
+</li>
+<li><b>B</b> 		n<sup>2</sup> &isin; O(n<sup>3</sup>)
+</li>
+<li><b>C</b> 		log (n<sup>10</sup>) &isin; O(log n)
+</li>
+<li><b>D</b> 		n log n &isin; &Omega;(n)
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		2,6,6
+</li>
+<li><b>B</b> 		0,3,4
+</li>
+<li><b>C</b> 		0,4
+</li>
+<li><b>D</b> 		3,4,5
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		costante
+</li>
+<li><b>B</b> 		logaritmico
+</li>
+<li><b>C</b> 		quadratico
+</li>
+<li><b>D</b> 		lineare
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache ad indirizzamento diretto contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		8
+</li>
+<li><b>B</b> 		1
+</li>
+<li><b>C</b> 		2
+</li>
+<li><b>D</b> 		4
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		In una architettura protocollare a strati di tipo OSI quale strato &egrave; generalmente responsabile di determinare il cammino migliore per instradare un pacchetto dati?
+
+<ul>
+<li><b>A</b> 		lo strato fisico
+</li>
+<li><b>B</b> 		lo strato di rete
+</li>
+<li><b>C</b> 		lo strato di trasporto
+</li>
+<li><b>D</b> 		lo strato applicativo
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo:
+<pre>
+public static void stampa()	{
+	for (int i=1; i<10; i=i+i) {
+		if (i==5) break;
+		System.out.print (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo stampa <tt>123456789</tt>
+</li>
+<li><b>B</b> 		Il metodo stampa <tt>124</tt>
+</li>
+<li><b>C</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile dichiarare una variabile nell&#x27;intestazione di un&#x27;istruzione <tt>for</tt>.
+</li>
+<li><b>D</b> 		L&#x27;istruzione <tt>break</tt> all&#x27;interno del metodo <tt>stampa()</tt> non viene mai eseguita.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>B</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>C</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+</ul>
+</body></html>

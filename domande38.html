@@ -1,0 +1,224 @@
+<!-- 38 -->
+<html><HEAD><TITLE>Test VCA - test numero 38</TITLE><head><body>
+<center><h2>Test VCA - test numero 38</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaSwitch</tt>, riportata di seguito:
+<pre>
+public class ProvaSwitch {
+	public static void conv(int x) {
+		switch (x) {
+			case 0:
+				System.out.print ("Zero");
+			case 1:
+				System.out.print ("Uno");
+				break;
+			default:
+				System.out.println ("Errore");
+		} 
+	}
+	public static void main (String[] x) {
+		for (int i=0; i<=2; i++)
+			conv (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoDue</tt>
+</li>
+<li><b>B</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUno</tt>
+</li>
+<li><b>C</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoUnoErrore</tt>
+</li>
+<li><b>D</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoErrore</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache ad indirizzamento diretto contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		4
+</li>
+<li><b>B</b> 		2
+</li>
+<li><b>C</b> 		1
+</li>
+<li><b>D</b> 		8
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		0,4
+</li>
+<li><b>B</b> 		2,6,6
+</li>
+<li><b>C</b> 		3,4,5
+</li>
+<li><b>D</b> 		0,3,4
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Siano <tt>R1(A1,A2)</tt> e <tt>R2(A1,A3)</tt> due schemi di relazione. Si consideri la seguente query espressa in SQL:
+<pre>
+SELECT *
+FROM R1, R2
+WHERE R1.A1=R2.A1
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa una operazione di proiezione ed una operazione di selezione;
+</li>
+<li><b>B</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di join naturale.
+</li>
+<li><b>C</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di selezione dell&#x27;algebra relazionale;
+</li>
+<li><b>D</b> 		la query non corrisponde ad alcuna espressione dell&#x27;algebra relazionale;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente? 
+
+<ul>
+<li><b>A</b> 		In profondit&agrave; con ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In profondit&agrave; con ordine posticipato (post-order)
+</li>
+<li><b>C</b> 		In ampiezza
+</li>
+<li><b>D</b> 		In profondit&agrave; con ordine simmetrico (in-order)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		L&#x27;assegnazione degli autovalori consente di	
+
+<ul>
+<li><b>A</b> 		effettuare la reiezione completa dei disturbi.
+</li>
+<li><b>B</b> 		ricostruire asintoticamente lo stato del processo;
+</li>
+<li><b>C</b> 		controllare la risposta transitoria;
+</li>
+<li><b>D</b> 		progettare un controllore a dimensione minima;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si considerino i seguenti metodi:
+<pre>
+public static int cosaFa(int a, int b) {
+	if (a&lt;b) return cosaFa(b-a);
+	else return cosaFa(a-b);
+}
+public static int cosaFa(int x) {
+	if (x&gt;0) return -x;
+	else return 0;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;invocazione <tt>cosaFa(a,b)</tt> restituisce sempre <tt>0</tt>.
+</li>
+<li><b>B</b> 		L&#x27;invocazione <tt>cosaFa(a,b)</tt> restituisce il valore assoluto della differenza fra <tt>a</tt> e <tt>b</tt>, cambiato di segno.
+</li>
+<li><b>C</b> 		Il programma &egrave; errato perch&egrave; contiene una definizione multipla del metodo cosaFa.
+</li>
+<li><b>D</b> 		L&#x27;invocazione <tt>cosaFa(a)</tt> restituisce il valore di <tt>a</tt> cambiato di segno.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri la seguente espressione booleana:
+<tt>!(a || b) && b</tt>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> l&#x27;espressione restituisce sempre false.
+</li>
+<li><b>B</b> l&#x27;espressione restituisce true solo quando b==true e a==false.
+</li>
+<li><b>C</b> l&#x27;espressione restituisce true solo quando b==true.
+</li>
+<li><b>D</b> l&#x27;espressione restituisce sempre true.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+		Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a pacchetto &egrave; indicato
+
+<ul>
+<li><b>A</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente intermittenti (es: dati On-Off)
+</li>
+<li><b>B</b> 		in qualsiasi circostanza, indipendentemente dal tipo di traffico offerto dalle sorgenti
+</li>
+<li><b>C</b> 		soprattutto quando le sorgenti di traffico emettono ad alto ritmo binario
+</li>
+<li><b>D</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente continue (es: voce o streaming)
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Quale delle seguenti asserzioni su un grafo semplice &egrave; <b>falsa</b>? (n = num. vertici, m = num. archi)
+
+<ul>
+<li><b>A</b> 		&Egrave; certamente connesso
+</li>
+<li><b>B</b> 		m &isin; O(n<sup>2</sup>)
+</li>
+<li><b>C</b> 		Il grado di un vertice pu&ograve; essere un qualunque numero in {0, 1, 2, &hellip;, n-1}
+</li>
+<li><b>D</b> 		La somma dei gradi dei vertici &egrave; 2m
+</li>
+</ul>
+</body></html>

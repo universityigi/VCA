@@ -1,0 +1,216 @@
+<!-- 84 -->
+<html><HEAD><TITLE>Test VCA - test numero 84</TITLE><head><body>
+<center><h2>Test VCA - test numero 84</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Una memoria DRAM non conserva i dati in essa immagazzinati in assenza di alimentazione
+elettrica. E&rsquo; richiesto un refresh elettrico:
+
+<ul>
+<li><b>A</b> 		Ogni secondo
+</li>
+<li><b>B</b> 		Ogni 10-100 millisecondi
+</li>
+<li><b>C</b> 		Ogni 10-100 nanosecondi
+</li>
+<li><b>D</b> 		Ogni 10-100 microsecondi
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri la seguente espressione Java: <tt>a==b</tt>, dove <tt>a</tt> e <tt>b</tt> sono riferimenti ad array di <tt>int</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> sono riferimenti a due array che contengono gli stessi interi nello stesso ordine.
+</li>
+<li><b>B</b> 		L&#x27;espressione vale sempre <tt>false</tt>, indipendentemente dal contenuto di <tt>a</tt> e <tt>b</tt>.
+</li>
+<li><b>C</b> 		L&#x27;espressione &egrave; errata poiche&#x301; l&#x27;operatore <tt>==</tt> non &egrave; applicabile a riferimenti ad array.
+</li>
+<li><b>D</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> contengono lo stesso indirizzo, cio&egrave; puntano allo stesso array.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+import java.util.*;
+public class Test {
+	public static void main(String[] args){
+		List&lt;Integer&gt; l = new ArrayList&lt;Integer&gt;();
+		l.add(new Integer(1));
+		l.add(new Integer(2)); 
+		l.add(new Integer(3));
+		... // ISTRUZIONE A QUI
+		while (i.hasNext()) {
+			int q;
+			... // ISTRUZIONE B QUI
+			System.out.println(q*q);
+		}
+	}
+}
+</pre>
+Mettendo al posto delle istruzioni mancanti le seguenti istruzioni A e B, una sola tra queste combinazione &egrave; errata e non produce il risultato di stampare i numeri 1, 4, 9. Quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = i.next();
+
+</li>
+<li><b>B</b> 		A: Iterator&lt;Object&gt; i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+<li><b>C</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = (int)i.next();
+
+</li>
+<li><b>D</b> 		A: Iterator i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		L&rsquo;elemento chiave per evitare il reiterarsi di collisioni in un accesso multiplo (MAC) casuale &egrave;:
+
+<ul>
+<li><b>A</b> 		l&rsquo;aggiunta di un campo di rivelazione di errore nelle Unit&agrave; Dati MAC
+</li>
+<li><b>B</b> 		la casualizzazione della durata dell&rsquo;intervallo di tempo di attesa prima di tentare la nuova emissione (noto come back-off)
+</li>
+<li><b>C</b> 		effettuare un controllo centralizzato delle collisioni 
+</li>
+<li><b>D</b> 		la possibilit&agrave; di ascoltare il mezzo multiaccesso per verificare la presenza di trasmissioni in corso prima di iniziare una nuova trasmissione
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; <b>falsa</b>?
+
+<ul>
+<li><b>A</b> 		n<sup>2</sup> &isin; O(n<sup>3</sup>)
+</li>
+<li><b>B</b> 		n log n &isin; &Omega;(n)
+</li>
+<li><b>C</b> 		n + log n &isin; O(log n)
+</li>
+<li><b>D</b> 		log (n<sup>10</sup>) &isin; O(log n)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		In un sistema interconnesso
+
+<ul>
+<li><b>A</b> 		la dimensione dello stato &egrave; pari alla soma delle dimensioni dei sottosistemi;
+</li>
+<li><b>B</b> 		il numero delle uscite &egrave; sempre maggiore del numero degli ingressi.
+</li>
+<li><b>C</b> 		si pu&ograve; avere stabilit&agrave; interna in presenza di uno o pi&ugrave; sottosistemi instabili;
+</li>
+<li><b>D</b> 		l&rsquo;ingresso e sempre uguale alla somma degli ingressi;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>C</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaSwitch</tt>, riportata di seguito:
+<pre>
+public class ProvaSwitch {
+	public static void conv(int x) {
+		switch (x) {
+			case 0:
+				System.out.print ("Zero");
+			case 1:
+				System.out.print ("Uno");
+				break;
+			default:
+				System.out.println ("Errore");
+		} 
+	}
+	public static void main (String[] x) {
+		for (int i=0; i<=2; i++)
+			conv (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUno</tt>
+</li>
+<li><b>B</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoUnoErrore</tt>
+</li>
+<li><b>C</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoErrore</tt>
+</li>
+<li><b>D</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoDue</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		La funzione n! &egrave;
+
+<ul>
+<li><b>A</b> 		O(log<sub>2</sub> n)
+</li>
+<li><b>B</b> 		O(n<sup>n</sup>)
+</li>
+<li><b>C</b> 		O(2<sup>n</sup>)
+</li>
+<li><b>D</b> 		O(n<sup>2</sup>)
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La reificazione di una relazione &egrave; una operazione prevista nella metodologia di progettazione concettuale di basi di dati e consiste nella trasformazione di una relazione in una entit&agrave;.  Una sola delle seguenti affermazioni sulla reificazione di una relazione &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		Se la relazione R ha n ruoli, allora la reificazione della relazione R produrr&agrave; una entit&agrave; che parteciper&agrave; ad n relazioni, dove ciascuna partecipazione sar&agrave; caratterizzata dalla cardinalit&agrave; (1,1);
+</li>
+<li><b>B</b> 		La reificazione di una relazione pu&ograve; essere applicata solo se la relazione non ha attributi;
+</li>
+<li><b>C</b> 		La reificazione di una relazione produce una nuove relazione in ISA con quella originaria;
+</li>
+<li><b>D</b> 		Se la relazione R &egrave; in ISA con un&#x27;altra relazione, allora non pu&ograve; essere oggetto di reificazione.  
+</li>
+</ul>
+</body></html>

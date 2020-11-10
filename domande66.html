@@ -1,0 +1,182 @@
+<!-- 66 -->
+<html><HEAD><TITLE>Test VCA - test numero 66</TITLE><head><body>
+<center><h2>Test VCA - test numero 66</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Quali di queste specifiche pu&ograve; essere in generale soddisfatta in un sistema tempo discreto e non in un sistema tempo continuo?
+
+<ul>
+<li><b>A</b> 		errore  nullo a regime permanente corrispondente ad un ingresso a gradino;
+</li>
+<li><b>B</b> 		autovalori del sistema complessivo coincidenti con dei valori assegnati. 
+</li>
+<li><b>C</b> 		sistema complessivo asintoticamente stabile;
+</li>
+<li><b>D</b> 		errore nullo in tempo finito corrispondente ad un ingresso a gradino;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+		A quale fra le seguenti categorie appartiene un grafo con n &gt; 1 nodi e m = 0 archi?
+
+<ul>
+<li><b>A</b> 		Grafo connesso
+</li>
+<li><b>B</b> 		Grafo completo
+</li>
+<li><b>C</b> 		DAG
+</li>
+<li><b>D</b> 		Grafo fortemente connesso
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		In un albero binario completo di n nodi l&#x27;altezza &egrave;
+
+<ul>
+<li><b>A</b> 		&#x3F4;(1)
+</li>
+<li><b>B</b> 		&#x3F4;(log n)
+</li>
+<li><b>C</b> 		&#x3F4;(n log n)
+</li>
+<li><b>D</b> 		&#x3F4;(n)
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma Java
+<pre>
+class Nodo {
+	public Nodo next;
+	public Object elem;
+	public Nodo(Object e, Nodo n) {
+		elem=e; next=n;
+	}
+	public String toString() {
+		if (next==null) return elem.toString();
+		else return elem+" "+this.next;
+	} 
+}
+public class Test {
+	public static void main(String[] args) {
+		Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+		System.out.println(init);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B C</tt>
+</li>
+<li><b>B</b> Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>C</b> Il programma &egrave; eseguito correttamente e stampa <tt>A null</tt>
+</li>
+<li><b>D</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		A cosa serve in una rete in area locale (LAN) un protocollo di accesso multiplo?
+
+<ul>
+<li><b>A</b> 		ad evitare che utenti differenti collidano durante la trasmissione su una risorsa comune (es. canale di comunicazione)
+</li>
+<li><b>B</b> 		a velocizzare la comunicazione attraverso una LAN
+</li>
+<li><b>C</b> 		ad instradare le unit&agrave; informative nella LAN
+</li>
+<li><b>D</b> 		a permettere ad utenti differenti la condivisione di una risorsa comune (es. canale di comunicazione) 
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un vincolo di foreign key (chiave esterna) tra un attributo A di una relazione R ed una relazione Q impone che anche la chiave di Q sia un attributo di nome A
+</li>
+<li><b>B</b> 		Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impone che non esistono due tuple di R con lo stessao valore dell&#x27;attributo A;
+</li>
+<li><b>C</b> 		Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impllica che il valore nullo non pu&ograve; comparire in A.
+</li>
+<li><b>D</b> 		Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impone che ogni valore che compare in A compare anche nella chiave primaria di Q;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+		Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		int a[][] = new int[10][10];
+</li>
+<li><b>B</b> 		int a[10][10] = new int[][];
+</li>
+<li><b>C</b> 		int a[][] = new int[10,10]
+</li>
+<li><b>D</b> 		int [a][] = new int[10][10];
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo (il cui corpo &egrave; volutamente privo di indentazione):
+<pre>
+public static int f (int a, int b, int c) {
+	if (a>b)
+	if (b>c)
+	return a;
+	else
+	return c;
+	return b;
+}
+</pre>
+Si assuma che il metodo venga invocato con i seguenti paramentri attuali: <tt>f(10, 5, 7)</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo causa un errore a tempo di esecuzione, perche&#x301; la JVM non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+<li><b>B</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; il compilatore non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+<li><b>C</b> L&#x27;<tt>else</tt> fa riferimento al primo <tt>if</tt>. Il metodo restituisce quindi <tt>5</tt>.
+</li>
+<li><b>D</b> 		L&#x27;<tt>else</tt> fa riferimento al secondo <tt>if</tt>. Il metodo restituisce quindi <tt>7</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>B</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>C</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>D</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Il segmento STACK di un processo mantiene:
+
+<ul>
+<li><b>A</b> 		Il codice eseguibile su cui &egrave; basato il processo
+</li>
+<li><b>B</b> 		I record di attivazione delle funzioni
+</li>
+<li><b>C</b> 		I blocchi allocati dinamicamente dal programma
+</li>
+<li><b>D</b> 		Le variabili con durata statica (es. variabili globali) di un programma
+</li>
+</ul>
+</body></html>

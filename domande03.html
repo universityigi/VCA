@@ -1,0 +1,218 @@
+<!-- 3 -->
+<html><HEAD><TITLE>Test VCA - test numero 3</TITLE><head><body>
+<center><h2>Test VCA - test numero 3</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		La funzione n! &egrave;
+
+<ul>
+<li><b>A</b> 		O(2<sup>n</sup>)
+</li>
+<li><b>B</b> 		O(log<sub>2</sub> n)
+</li>
+<li><b>C</b> 		O(n<sup>n</sup>)
+</li>
+<li><b>D</b> 		O(n<sup>2</sup>)
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		La fase di progettazione logica di basi di dati procede attraverso i passi di ristrutturazione dello schema concettuale, traduzione diretta e ristrutturazione dello schema logico. Una sola delle seguenti affermazioni sulla progettazione logica &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		La ristrutturazione dello schema logico si effettua solo se ci sono attributi composti, attributi multivalore o relazioni ISA nello schema concettuale;
+</li>
+<li><b>B</b> 		Dopo la traduzione diretta non ci sono tabelle relazionali che ammettono valori nulli nei propri attributi;
+</li>
+<li><b>C</b> 		La traduzione diretta ha lo scopo di derivare lo schema logico corrispondente allo schema concettuale ristrutturato, traducendo ogni entit&agrave; in una tabella, ed ogni relazione non accorpata in una tabella.
+</li>
+<li><b>D</b> 		La ristrutturazione dello schema concettuale ha lo scopo di ottimizzare le tabelle relazionali;
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaCiclo</tt>, riportata di seguito:
+<pre>
+import javax.swing.JOptionPane;
+public class ProvaCiclo {
+	public static void main (String[] args) {
+		int i=Integer.parseInt (JOptionPane.showInputDialog ("Immetti un intero positivo"));
+		while (i>0) {
+			System.out.println (i);
+			i--;
+		}
+	} 
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		La classe <tt>ProvaCiclo</tt> causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile stabilire prima dell&#x27;esecuzione quante iterazioni verranno eseguite all&#x27;interno del metodo main.
+</li>
+<li><b>B</b> 		Il metodo <tt>main</tt> contiene un esempio di ciclo indefinito.
+</li>
+<li><b>C</b> 		Se il numero immesso dall&#x27;utente &egrave; un intero positivo, vengono stampati gli interi da 1 ad i in ordine crescente.
+</li>
+<li><b>D</b> 		Il metodo <tt>main</tt> contiene un esempio di ciclo definito.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero non &egrave; in profondit&agrave;? 
+
+<ul>
+<li><b>A</b> 		In ordine posticipato (post-order)
+</li>
+<li><b>B</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		In ampiezza
+</li>
+<li><b>D</b> 		In ordine anticipato (pre-order)
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+import java.util.*;
+public class Test {
+	public static void main(String[] args){
+		List&lt;Integer&gt; l = new ArrayList&lt;Integer&gt;();
+		l.add(new Integer(1));
+		l.add(new Integer(2)); 
+		l.add(new Integer(3));
+		... // ISTRUZIONE A QUI
+		while (i.hasNext()) {
+			int q;
+			... // ISTRUZIONE B QUI
+			System.out.println(q*q);
+		}
+	}
+}
+</pre>
+Mettendo al posto delle istruzioni mancanti le seguenti istruzioni A e B, una sola tra queste combinazione &egrave; errata e non produce il risultato di stampare i numeri 1, 4, 9. Quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = (int)i.next();
+
+</li>
+<li><b>B</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = i.next();
+
+</li>
+<li><b>C</b> 		A: Iterator i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+<li><b>D</b> 		A: Iterator&lt;Object&gt; i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si considerino i seguenti metodi:
+<pre>
+public static int cosaFa(int a, int b) {
+	if (a&lt;b) return cosaFa(b-a);
+	else return cosaFa(a-b);
+}
+public static int cosaFa(int x) {
+	if (x&gt;0) return -x;
+	else return 0;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;invocazione <tt>cosaFa(a)</tt> restituisce il valore di <tt>a</tt> cambiato di segno.
+</li>
+<li><b>B</b> 		Il programma &egrave; errato perch&egrave; contiene una definizione multipla del metodo cosaFa.
+</li>
+<li><b>C</b> 		L&#x27;invocazione <tt>cosaFa(a,b)</tt> restituisce il valore assoluto della differenza fra <tt>a</tt> e <tt>b</tt>, cambiato di segno.
+</li>
+<li><b>D</b> 		L&#x27;invocazione <tt>cosaFa(a,b)</tt> restituisce sempre <tt>0</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Il sistema a tempo discreto equivalente ad un dato sistema a tempo continuo
+
+<ul>
+<li><b>A</b> 		riproduce agli istanti di campionamento le evoluzioni del sistema a tempo continuo;
+</li>
+<li><b>B</b> 		&egrave; ottenuto campionando l&rsquo;ingresso e le evoluzioni nello stato e in uscita;
+</li>
+<li><b>C</b> 		si calcola mediante l&rsquo;approssimazione di Eulero della derivata del&rsquo;equazione di stato;
+</li>
+<li><b>D</b> 		riproduce, agli istanti di campionamento, le evoluzioni del sistema a tempo continuo quando l&rsquo;ingresso ha un andamento particolare.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+		Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a pacchetto &egrave; indicato
+
+<ul>
+<li><b>A</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente continue (es: voce o streaming)
+</li>
+<li><b>B</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente intermittenti (es: dati On-Off)
+</li>
+<li><b>C</b> 		soprattutto quando le sorgenti di traffico emettono ad alto ritmo binario
+</li>
+<li><b>D</b> 		in qualsiasi circostanza, indipendentemente dal tipo di traffico offerto dalle sorgenti
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Il segmento DATA di un processo mantiene:
+
+<ul>
+<li><b>A</b> 		I blocchi allocati dinamicamente dal programma
+</li>
+<li><b>B</b> 		Il codice eseguibile su cui &egrave; basato il processo
+</li>
+<li><b>C</b> 		I record di attivazione delle funzioni
+</li>
+<li><b>D</b> 		Le variabili con durata statica (es. variabili globali) di un programma
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>B</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+<li><b>C</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+</ul>
+</body></html>

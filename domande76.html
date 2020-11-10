@@ -1,0 +1,193 @@
+<!-- 76 -->
+<html><HEAD><TITLE>Test VCA - test numero 76</TITLE><head><body>
+<center><h2>Test VCA - test numero 76</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		In un sistema di controllo con reazione dall&#x27;uscita &egrave; possibile assegnare ad arbitrio tutti gli autovalori 
+
+<ul>
+<li><b>A</b> 		se e solo se tutti gli autovalori del processo sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti gli autovalori del processo raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti gli autovalori del processo sono raggiungibili ed osservabili.
+</li>
+<li><b>D</b> 		se e solo se tutti gli autovalori del processo irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma Java
+<pre>
+class Nodo {
+	public Nodo next;
+	public Object elem;
+	public Nodo(Object e, Nodo n) {
+		elem=e; next=n;
+	}
+	public String toString() {
+		if (next==null) return elem.toString();
+		else return elem+" "+this.next;
+	} 
+}
+public class Test {
+	public static void main(String[] args) {
+		Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+		System.out.println(init);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Il programma &egrave; eseguito correttamente e stampa <tt>A null</tt>
+</li>
+<li><b>B</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B C</tt>
+</li>
+<li><b>C</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B</tt>
+</li>
+<li><b>D</b> Il frammento di codice contiene errori sintattici.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		I parametri delle funzioni di un processo sono memorizzati nel segmento:
+
+<ul>
+<li><b>A</b> 		STACK
+</li>
+<li><b>B</b> 		DATA
+</li>
+<li><b>C</b> 		CODE
+</li>
+<li><b>D</b> 		HEAP
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Le modulazioni numeriche in banda traslata si utilizzano per multiplare pi&ugrave; segnali numerici sullo stesso canale. 
+
+<ul>
+<li><b>A</b> 		A parit&agrave; di banda del segnale, meno &egrave; larga l&rsquo;occupazione in banda del canale, pi&ugrave; &egrave; alto il numero di segnali che possono essere trasmessi contemporaneamente
+</li>
+<li><b>B</b> 		A parit&agrave; di banda del canale, pi&ugrave; &egrave; larga l&rsquo;occupazione in banda del segnale, pi&ugrave; &egrave; alto il numero di segnali che possono essere trasmessi contemporaneamente
+</li>
+<li><b>C</b> 		Non esiste alcuna dipendenza tra la banda del segnale e il numero di segnali numero di segnali che possono essere trasmessi contemporaneamente
+</li>
+<li><b>D</b> 		A parit&agrave; di banda del canale, meno &egrave; larga l&rsquo;occupazione in banda del segnale, pi&ugrave; &egrave; alto il numero di segnali che possono essere trasmessi contemporaneamente
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>B</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+<li><b>D</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		La nozione di &quot;ruolo&quot; &egrave; una delle nozioni fondamentali del modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		&quot;Ruolo&quot; &egrave; sinonimo di attributo;
+</li>
+<li><b>B</b> 		Un ruolo identifica una partecipazione di una entit&agrave; alla relazione ISA.
+</li>
+<li><b>C</b> 		Un ruolo identifica una partecipazione di una entit&agrave; ad una relazione;
+</li>
+<li><b>D</b> 		&quot;Ruolo&quot; &egrave; sinonimo di relazione;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+Si consideri il seguente metodo per il calcolo del fattoriale
+<pre>
+public static long fattoriale(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * fattoriale(n-1);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Non &egrave; possibile stabilire a priori il numero massimo di record di attivazione che saranno presenti nello stack in seguito all&#x27;invocazione del metodo.
+</li>
+<li><b>B</b> Il numero di record di attivazione presenti nello stack quando il metodo viene invocato con valore <tt>0</tt> del parametro &egrave; <tt>n+1</tt>.
+</li>
+<li><b>C</b> Lo Stack della Java Virtual Machine contiene, ad ogni istante, soltanto un record di attivazione relativo al metodo.
+</li>
+<li><b>D</b> Il numero massimo di record di attivazione presenti nello stack a seguito dell&#x27;invocazione del metodo non dipende da <tt>n</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale categoria di grafi semplici (non orientati e privi di self-loop) non ammette una foresta ricoprente?
+
+<ul>
+<li><b>A</b> 		Grafi aciclici
+</li>
+<li><b>B</b> 		Grafi non connessi
+</li>
+<li><b>C</b> 		Nessuna
+</li>
+<li><b>D</b> 		Grafi connessi
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo Java:
+<pre>
+public static void cosaFa(int[] v, short y) {
+	int i = 0;
+	while (i&lt;v.length) v[++i] = y;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+<li><b>B</b> 		Il metodo scrive il valore <tt>y</tt> in tutte le celle dell&#x27;array <tt>v</tt>.
+</li>
+<li><b>C</b> 		Il metodo genera un errore di compilazione perch&egrave; <tt>length</tt> andrebbe scritto <tt>lenght</tt>
+</li>
+<li><b>D</b> 		Il metodo genera una eccezione di tipo <tt>PossibleLossOfPrecision</tt> poich&egrave; non &egrave; possibile assegnare uno <tt>short</tt> a una variabile <tt>int</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La chiusura transitiva di un DAG (grafo diretto aciclico) &egrave; un
+
+<ul>
+<li><b>A</b> 		grafo diretto con cicli
+</li>
+<li><b>B</b> 		grafo orientato completo
+</li>
+<li><b>C</b> 		DAG
+</li>
+<li><b>D</b> 		grafo semplice
+</li>
+</ul>
+</body></html>

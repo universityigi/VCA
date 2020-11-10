@@ -1,0 +1,240 @@
+<!-- 32 -->
+<html><HEAD><TITLE>Test VCA - test numero 32</TITLE><head><body>
+<center><h2>Test VCA - test numero 32</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>B</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>C</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>D</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		In un albero binario completo di n nodi l&#x27;altezza &egrave;
+
+<ul>
+<li><b>A</b> 		&#x3F4;(n)
+</li>
+<li><b>B</b> 		&#x3F4;(n log n)
+</li>
+<li><b>C</b> 		&#x3F4;(log n)
+</li>
+<li><b>D</b> 		&#x3F4;(1)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		In generale, per progettare un sistema di controllo che permetta la reiezione completa del disturbo &egrave; necessario che:
+
+<ul>
+<li><b>A</b> 		il disturbo sia illimitato.
+</li>
+<li><b>B</b> 		il disturbo sia misurabile;
+</li>
+<li><b>C</b> 		il controllore sia a dimensione minima;
+</li>
+<li><b>D</b> 		il disturbo sia limitato;
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Consideriamo la relazione <tt>Persona(nome,citta,eta)</tt>, che memorizza il nome, l&#x27;et&agrave; e la citt&agrave; di residenza delle persone. Per ogni citt&agrave;, si vuole calcolare il numero delle persone maggiorenni (la cui et&agrave; &egrave; maggiore di 18) che vivono in quella citt&agrave;. Una sola delle seguenti affermazioni &egrave;  vera. Quale?
+
+<ul>
+<li><b>A</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+GROUP BY citta
+</pre>
+</li>
+<li><b>B</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+WHERE eta &gt; 18
+GROUP BY citta
+</pre>
+</li>
+<li><b>C</b> 		Non esiste alcuna query SQL che calcola i dati voluti;
+</li>
+<li><b>D</b> 		La query SQL corretta &egrave;:
+<pre>
+SELECT count(*)
+FROM Persona
+GROUP BY citta, eta
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Una risorsa di trasferimento &egrave; caratterizzata da una capacit&agrave; di C bit/s; la portata media (throughput) della risorsa (espressa in bit/s) 
+
+<ul>
+<li><b>A</b> 		pu&ograve; essere, eccezionalmente, maggiore di C
+</li>
+<li><b>B</b> 		non &egrave; mai maggiore di C
+</li>
+<li><b>C</b> 		ha normalmente valore numerico uguale a C
+</li>
+<li><b>D</b> 		non dipende dal valore di C
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo:
+<pre>
+public static void stampa()	{
+	for (int i=1; i<10; i=i+i) {
+		if (i==5) break;
+		System.out.print (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo stampa <tt>123456789</tt>
+</li>
+<li><b>B</b> 		L&#x27;istruzione <tt>break</tt> all&#x27;interno del metodo <tt>stampa()</tt> non viene mai eseguita.
+</li>
+<li><b>C</b> 		Il metodo stampa <tt>124</tt>
+</li>
+<li><b>D</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile dichiarare una variabile nell&#x27;intestazione di un&#x27;istruzione <tt>for</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache completamente associativa contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		5
+</li>
+<li><b>C</b> 		8
+</li>
+<li><b>D</b> 		2
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale delle seguenti asserzioni su un grafo semplice &egrave; <b>falsa</b>? (n = num. vertici, m = num. archi)
+
+<ul>
+<li><b>A</b> 		Il grado di un vertice pu&ograve; essere un qualunque numero in {0, 1, 2, &hellip;, n-1}
+</li>
+<li><b>B</b> 		m &isin; O(n<sup>2</sup>)
+</li>
+<li><b>C</b> 		La somma dei gradi dei vertici &egrave; 2m
+</li>
+<li><b>D</b> 		&Egrave; certamente connesso
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		2,6,6
+</li>
+<li><b>B</b> 		0,3,4
+</li>
+<li><b>C</b> 		0,4
+</li>
+<li><b>D</b> 		3,4,5
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma Java
+<pre>
+class Nodo {
+	public Nodo next;
+	public Object elem;
+	public Nodo(Object e, Nodo n) {
+		elem=e; next=n;
+	}
+	public String toString() {
+		if (next==null) return elem.toString();
+		else return elem+" "+this.next;
+	} 
+}
+public class Test {
+	public static void main(String[] args) {
+		Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+		System.out.println(init);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Il programma &egrave; eseguito correttamente e stampa <tt>A null</tt>
+</li>
+<li><b>B</b> Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>C</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B C</tt>
+</li>
+<li><b>D</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B</tt>
+</li>
+</ul>
+</body></html>

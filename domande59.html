@@ -1,0 +1,200 @@
+<!-- 59 -->
+<html><HEAD><TITLE>Test VCA - test numero 59</TITLE><head><body>
+<center><h2>Test VCA - test numero 59</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+		A quale fra le seguenti categorie appartiene un grafo con n &gt; 1 nodi e m = 0 archi?
+
+<ul>
+<li><b>A</b> 		Grafo completo
+</li>
+<li><b>B</b> 		Grafo fortemente connesso
+</li>
+<li><b>C</b> 		DAG
+</li>
+<li><b>D</b> 		Grafo connesso
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>B</b> L&#x27;esecuzione del metodo non termina.
+</li>
+<li><b>C</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>D</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo:
+<pre>
+public static void stampa()	{
+	for (int i=1; i<10; i=i+i) {
+		if (i==5) break;
+		System.out.print (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione <tt>break</tt> all&#x27;interno del metodo <tt>stampa()</tt> non viene mai eseguita.
+</li>
+<li><b>B</b> 		Il metodo stampa <tt>124</tt>
+</li>
+<li><b>C</b> 		Il metodo stampa <tt>123456789</tt>
+</li>
+<li><b>D</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile dichiarare una variabile nell&#x27;intestazione di un&#x27;istruzione <tt>for</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		quadratico
+</li>
+<li><b>B</b> 		lineare
+</li>
+<li><b>C</b> 		logaritmico
+</li>
+<li><b>D</b> 		costante
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		3,4,5
+</li>
+<li><b>B</b> 		0,4
+</li>
+<li><b>C</b> 		2,6,6
+</li>
+<li><b>D</b> 		0,3,4
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente creare una directory <tt>p</tt> e scrivere la classe in un file all&#x27;interno della directory <tt>p</tt> contenente la dichiarazione <tt>package p; class C { ... }</tt>;
+</li>
+<li><b>B</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente scrivere la classe in un file contenente la dichiarazione <tt>class p.C { ... }</tt>
+</li>
+<li><b>C</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente scrivere la classe in un file contenente la direttiva <tt>package p</tt>;
+</li>
+<li><b>D</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente scrivere la classe in un file contenente la dichiarazione <tt>package p; class C { ... }</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Si consideri uno schema Entit&agrave;-Relazione in cui l&#x27;entit&agrave; STUDENTE &egrave; legata all&#x27;entit&agrave; UNIVERSIT&Agrave; dalla relazione ISCRITTO. Si vuole esprimere nello schema il vincolo che ogni studente &egrave; iscritto ad una ed una sola UNIVERSIT&Agrave;. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Si pu&ograve; esprimere il vincolo asserendo che UNIVERSIT&Agrave; &egrave; identificatore per STUDENTE.
+</li>
+<li><b>B</b> 		Si pu&ograve; esprimere il vincolo mediante la cardinalit&agrave; (1,1) del ruolo che collega STUDENTE a UNIVERSIT&Agrave;.
+</li>
+<li><b>C</b> 		Il vincolo &egrave; gi&agrave; implicitamente espresso nello schema descritto;
+</li>
+<li><b>D</b> 		Poich&eacute; non &egrave; possibile esprimere il vincolo usando le primitive del modello Entit&agrave;-Relazione, si deve ricorrere ad un vincolo esterno.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Il luogo delle radici permette di individuare una compensazione atta
+
+<ul>
+<li><b>A</b> 		ad assegnare gli autovalori al sistema complessivo;
+</li>
+<li><b>B</b> 		ad aumentare il margine di guadagno del sistema complessivo. 
+</li>
+<li><b>C</b> 		a stabilizzare asintoticamente il sistema complessivo;
+</li>
+<li><b>D</b> 		ad aumentare il margine di fase del sistema complessivo;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		In una architettura protocollare a strati di tipo OSI quale strato &egrave; generalmente responsabile di determinare il cammino migliore per instradare un pacchetto dati?
+
+<ul>
+<li><b>A</b> 		lo strato di trasporto
+</li>
+<li><b>B</b> 		lo strato applicativo
+</li>
+<li><b>C</b> 		lo strato di rete
+</li>
+<li><b>D</b> 		lo strato fisico
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Il segmento STACK di un processo mantiene:
+
+<ul>
+<li><b>A</b> 		Il codice eseguibile su cui &egrave; basato il processo
+</li>
+<li><b>B</b> 		Le variabili con durata statica (es. variabili globali) di un programma
+</li>
+<li><b>C</b> 		I blocchi allocati dinamicamente dal programma
+</li>
+<li><b>D</b> 		I record di attivazione delle funzioni
+</li>
+</ul>
+</body></html>

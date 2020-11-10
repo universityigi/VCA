@@ -1,0 +1,207 @@
+<!-- 55 -->
+<html><HEAD><TITLE>Test VCA - test numero 55</TITLE><head><body>
+<center><h2>Test VCA - test numero 55</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public class PezzoMusicale {
+	public static void riproduci(PezzoMusicale i) {
+		i.play();
+	}
+	public void play() {
+		/* altro codice */
+	}
+}
+</pre>
+Quali delle seguenti istruzioni genera un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+PezzoMusicale.riproduci(canzone);
+</pre>
+</li>
+<li><b>B</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+canzone.riproduci(canzone);
+</pre>
+</li>
+<li><b>C</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+canzone.play();
+</pre>
+</li>
+<li><b>D</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+PezzoMusicale.play();
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Dato il seguente programma:
+<pre>
+import java.util.*; 
+class Test {
+	public static void main (String args[]) {
+		Object a = new HashSet();
+		System.out.print((a instanceof Set)+&quot;,&quot;);
+		System.out.print(a instanceof SortedSet);
+	}
+}
+</pre>
+Qual&#x27;&egrave; il risultato della compilazione ed esecuzione del programma ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Stampa:false,false
+</li>
+<li><b>B</b> 		Stampa:true,true
+</li>
+<li><b>C</b> 		Stampa:true,false
+</li>
+<li><b>D</b> 		Stampa:false,true
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		La relazione ISA tra entit&agrave; &egrave; una struttura che si pu&ograve; usare nel modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni sulla relazione ISA &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora ogni istanza di E &egrave; collegata con una relazione con almeno una istanza di F; 
+</li>
+<li><b>B</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora E ed F non hanno istanze comuni;
+</li>
+<li><b>C</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora E &egrave; un&#x27;entit&agrave; padre in una generalizzazione;
+</li>
+<li><b>D</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora ogni istanza di E &egrave; anche istanza di F.  
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>B</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>C</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>D</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> L&#x27;esecuzione del metodo non termina.
+</li>
+<li><b>B</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>C</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+<li><b>D</b> Il metodo stampa <tt>4</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Quale fra le seguenti <b>di norma</b> non &egrave; una propriet&agrave; delle funzioni hash ? 
+
+<ul>
+<li><b>A</b> 		Determinismo
+</li>
+<li><b>B</b> 		Iniettivit&agrave;
+</li>
+<li><b>C</b> 		Tempo di calcolo indipendente dal numero di chiavi in tabella
+</li>
+<li><b>D</b> 		Suriettivit&agrave;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		In quale caso non &egrave; soddisfatta l&rsquo;implicazione &not;p &rArr; q: 
+
+<ul>
+<li><b>A</b> 		se p &egrave; falso e q &egrave; vero 
+</li>
+<li><b>B</b> 		se p &egrave; falso e q &egrave; falso 
+</li>
+<li><b>C</b> 		se p &egrave; vero e q &egrave; vero 
+</li>
+<li><b>D</b> 		se p &egrave; vero e q &egrave; falso 
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Un processo &egrave; stabilizzabile asintoticamente con reazione dall&#x27;uscita
+
+<ul>
+<li><b>A</b> 		se e solo se tutti i suoi autovalori irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti i suoi autovalori raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti i suoi autovalori sono raggiungibili ed osservabili.
+</li>
+<li><b>D</b> 		se e solo se tutti i suoi autovalori sono a parte reale negativa;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Il segmento TEXT/CODE di un processo mantiene:
+
+<ul>
+<li><b>A</b> 		Le stringhe contenute nel testo del programma
+</li>
+<li><b>B</b> 		Le variabili con durata statica (es. variabili globali) di un programma
+</li>
+<li><b>C</b> 		I blocchi allocati dinamicamente dal programma
+</li>
+<li><b>D</b> 		Il codice eseguibile su cui &egrave; basato il processo
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Una risorsa di trasferimento &egrave; caratterizzata da una capacit&agrave; di C bit/s; la portata media (throughput) della risorsa (espressa in bit/s) 
+
+<ul>
+<li><b>A</b> 		pu&ograve; essere, eccezionalmente, maggiore di C
+</li>
+<li><b>B</b> 		non dipende dal valore di C
+</li>
+<li><b>C</b> 		non &egrave; mai maggiore di C
+</li>
+<li><b>D</b> 		ha normalmente valore numerico uguale a C
+</li>
+</ul>
+</body></html>

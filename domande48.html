@@ -1,0 +1,229 @@
+<!-- 48 -->
+<html><HEAD><TITLE>Test VCA - test numero 48</TITLE><head><body>
+<center><h2>Test VCA - test numero 48</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		0,4
+</li>
+<li><b>B</b> 		2,6,6
+</li>
+<li><b>C</b> 		3,4,5
+</li>
+<li><b>D</b> 		0,3,4
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>C</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+<li><b>B</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>C</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>D</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Siano <tt>R1(A1,A2)</tt> e <tt>R2(A1,A3)</tt> due schemi di relazione. Si consideri la seguente query espressa in SQL:
+<pre>
+SELECT *
+FROM R1, R2
+WHERE R1.A1=R2.A1
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di selezione dell&#x27;algebra relazionale;
+</li>
+<li><b>B</b> 		la query non corrisponde ad alcuna espressione dell&#x27;algebra relazionale;
+</li>
+<li><b>C</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di join naturale.
+</li>
+<li><b>D</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa una operazione di proiezione ed una operazione di selezione;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quanti cache miss pu&ograve; generare nel caso peggiore la scansione lineare di una lista collegata di n elementi assumendo una cache completamente associativa in cui ogni linea pu&ograve; contenere k nodi dell&rsquo;array?
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		k
+</li>
+<li><b>C</b> 		n/k
+</li>
+<li><b>D</b> 		n
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Quale categoria di grafi semplici (non orientati e privi di self-loop) non ammette una foresta ricoprente?
+
+<ul>
+<li><b>A</b> 		Grafi aciclici
+</li>
+<li><b>B</b> 		Grafi connessi
+</li>
+<li><b>C</b> 		Nessuna
+</li>
+<li><b>D</b> 		Grafi non connessi
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo Java:
+<pre>
+public static void cosaFa(int[] v, short y) {
+	int i = 0;
+	while (i&lt;v.length) v[++i] = y;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo scrive il valore <tt>y</tt> in tutte le celle dell&#x27;array <tt>v</tt>.
+</li>
+<li><b>B</b> 		Il metodo genera un errore di compilazione perch&egrave; <tt>length</tt> andrebbe scritto <tt>lenght</tt>
+</li>
+<li><b>C</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+<li><b>D</b> 		Il metodo genera una eccezione di tipo <tt>PossibleLossOfPrecision</tt> poich&egrave; non &egrave; possibile assegnare uno <tt>short</tt> a una variabile <tt>int</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		A cosa servono le procedure di controllo d&rsquo;errore effettuate in strati protocollari quali quello di collegamento o di trasporto (es: Forward Error Correction (FEC) e Automatic Repeat Request ARQ)?
+
+<ul>
+<li><b>A</b> 		solo verificare la giusta sequenza delle unit&agrave; informative ricevute
+</li>
+<li><b>B</b> 		a numerare le unit&agrave; informative tramesse
+</li>
+<li><b>C</b> 		a garantire che le unit&agrave; informative trasmesse non vengano mai scartate dal ricevitore
+</li>
+<li><b>D</b> 		a verificare la presenza di errori nella unit&agrave; informative ricevute ed eventualmente correggerli
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente? 
+
+<ul>
+<li><b>A</b> 		In profondit&agrave; con ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In ampiezza
+</li>
+<li><b>C</b> 		In profondit&agrave; con ordine posticipato (post-order)
+</li>
+<li><b>D</b> 		In profondit&agrave; con ordine simmetrico (in-order)
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri la seguente definizione del metodo <tt>modificaNumeriPari</tt>:
+<pre>
+public static int[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+Quale dei seguenti metodi non sovraccarica (overload) correttamente il metodo generando quindi un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+public int[] modificaNumeriPari(int[] dati, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>B</b> <pre>
+public static void modificaNumeriPari(int[] dati) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>C</b> <pre>
+public static int[] modificaNumeriPari(int[] dati, int num, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>D</b> <pre>
+public double[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+</ul>
+</body></html>

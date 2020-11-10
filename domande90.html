@@ -1,0 +1,182 @@
+<!-- 90 -->
+<html><HEAD><TITLE>Test VCA - test numero 90</TITLE><head><body>
+<center><h2>Test VCA - test numero 90</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		In un sistema di controllo con reazione dall&#x27;uscita &egrave; possibile assegnare ad arbitrio tutti gli autovalori 
+
+<ul>
+<li><b>A</b> 		se e solo se tutti gli autovalori del processo raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti gli autovalori del processo sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti gli autovalori del processo sono raggiungibili ed osservabili.
+</li>
+<li><b>D</b> 		se e solo se tutti gli autovalori del processo irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+		Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		int a[10][10] = new int[][];
+</li>
+<li><b>B</b> 		int [a][] = new int[10][10];
+</li>
+<li><b>C</b> 		int a[][] = new int[10][10];
+</li>
+<li><b>D</b> 		int a[][] = new int[10,10]
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Lo scopo di una memoria cache &egrave;:
+
+<ul>
+<li><b>A</b> 		Permettere a pi&ugrave; core di accedere in parallelo alla stessa zona di memoria fisica
+</li>
+<li><b>B</b> 		Fornire uno spazio di memoria condiviso tra pi&ugrave; processi per consentire loro di comunicare 
+</li>
+<li><b>C</b> 		Garantire protezione della memoria in modo che un processo non possa accedere allo spazio logico di un altro processo 
+</li>
+<li><b>D</b> 		Sfruttare le propriet&agrave; di localit&agrave; dei programmi per velocizzare gli accessi a memoria
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		In un albero binario completo di n nodi l&#x27;altezza &egrave;
+
+<ul>
+<li><b>A</b> 		&#x3F4;(n log n)
+</li>
+<li><b>B</b> 		&#x3F4;(log n)
+</li>
+<li><b>C</b> 		&#x3F4;(1)
+</li>
+<li><b>D</b> 		&#x3F4;(n)
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a circuito &egrave; indicato
+
+<ul>
+<li><b>A</b> 		in qualsiasi circostanza, indipendentemente dal tipo di traffico offerto dalle sorgenti
+</li>
+<li><b>B</b> 		soprattutto quando le sorgenti di traffico emettono a basso ritmo binario
+</li>
+<li><b>C</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente intermittenti (es: dati On-Off)
+</li>
+<li><b>D</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente continue (es: voce o streaming)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Qual &egrave; il minimo numero di nodi pozzo (grado di uscita = 0) in un DAG?
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		0
+</li>
+<li><b>C</b> 		2
+</li>
+<li><b>D</b> 		3
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+Si consideri il seguente metodo per il calcolo del fattoriale
+<pre>
+public static long fattoriale(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * fattoriale(n-1);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Non &egrave; possibile stabilire a priori il numero massimo di record di attivazione che saranno presenti nello stack in seguito all&#x27;invocazione del metodo.
+</li>
+<li><b>B</b> Il numero massimo di record di attivazione presenti nello stack a seguito dell&#x27;invocazione del metodo non dipende da <tt>n</tt>.
+</li>
+<li><b>C</b> Il numero di record di attivazione presenti nello stack quando il metodo viene invocato con valore <tt>0</tt> del parametro &egrave; <tt>n+1</tt>.
+</li>
+<li><b>D</b> Lo Stack della Java Virtual Machine contiene, ad ogni istante, soltanto un record di attivazione relativo al metodo.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public class PezzoMusicale {
+	public static void riproduci(PezzoMusicale i) {
+		i.play();
+	}
+	public void play() {
+		/* altro codice */
+	}
+}
+</pre>
+Quali delle seguenti istruzioni genera un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+canzone.play();
+</pre>
+</li>
+<li><b>B</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+PezzoMusicale.play();
+</pre>
+</li>
+<li><b>C</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+canzone.riproduci(canzone);
+</pre>
+</li>
+<li><b>D</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+PezzoMusicale.riproduci(canzone);
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Overloading{
+	public void foo(String s) {}
+	public void foo(String s, int i) {}
+	public String foo(String s) {return s;}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il codice compila correttamente.
+</li>
+<li><b>B</b> Il compilatore da un errore di compilazione poich&egrave; i metodi hanno lo stesso nome.
+</li>
+<li><b>C</b> Il compilatore da un errore di compilazione poich&egrave; il corpo dei metodi &egrave; vuoto.
+</li>
+<li><b>D</b> Il compilatore da un errore di compilazione poich&egrave; il primo e l&#x27;ultimo metodo hanno la stessa firma.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La relazione ISA tra entit&agrave; &egrave; una struttura che si pu&ograve; usare nel modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni sulla relazione ISA &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora ogni istanza di E &egrave; collegata con una relazione con almeno una istanza di F; 
+</li>
+<li><b>B</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora E ed F non hanno istanze comuni;
+</li>
+<li><b>C</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora ogni istanza di E &egrave; anche istanza di F.  
+</li>
+<li><b>D</b> 		Se tra l&#x27;entit&agrave; E e l&#x27;entit&agrave; F sussiste la relazione ISA, allora E &egrave; un&#x27;entit&agrave; padre in una generalizzazione;
+</li>
+</ul>
+</body></html>

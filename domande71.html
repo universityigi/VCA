@@ -1,0 +1,194 @@
+<!-- 71 -->
+<html><HEAD><TITLE>Test VCA - test numero 71</TITLE><head><body>
+<center><h2>Test VCA - test numero 71</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		La nozione di &quot;ruolo&quot; &egrave; una delle nozioni fondamentali del modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		&quot;Ruolo&quot; &egrave; sinonimo di relazione;
+</li>
+<li><b>B</b> 		Un ruolo identifica una partecipazione di una entit&agrave; alla relazione ISA.
+</li>
+<li><b>C</b> 		Un ruolo identifica una partecipazione di una entit&agrave; ad una relazione;
+</li>
+<li><b>D</b> 		&quot;Ruolo&quot; &egrave; sinonimo di attributo;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo (il cui corpo &egrave; volutamente privo di indentazione):
+<pre>
+public static int f (int a, int b, int c) {
+	if (a>b)
+	if (b>c)
+	return a;
+	else
+	return c;
+	return b;
+}
+</pre>
+Si assuma che il metodo venga invocato con i seguenti paramentri attuali: <tt>f(10, 5, 7)</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;<tt>else</tt> fa riferimento al secondo <tt>if</tt>. Il metodo restituisce quindi <tt>7</tt>.
+</li>
+<li><b>B</b> L&#x27;<tt>else</tt> fa riferimento al primo <tt>if</tt>. Il metodo restituisce quindi <tt>5</tt>.
+</li>
+<li><b>C</b> 		Il metodo causa un errore a tempo di esecuzione, perche&#x301; la JVM non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+<li><b>D</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; il compilatore non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>B</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>C</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>D</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+		Il minimo numero di foglie di un albero binario di n nodi &egrave;
+
+<ul>
+<li><b>A</b> 		&#x23A3;log<sub>2</sub> n&#x23A6;
+</li>
+<li><b>B</b> 		n-1
+</li>
+<li><b>C</b> 		2<sup>n</sup>
+</li>
+<li><b>D</b> 		1
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		La stabilit&agrave; interna di un sistema lineare
+
+<ul>
+<li><b>A</b> 		dipende dal segno della parte reale dei poli della funzione di trasferimento;
+</li>
+<li><b>B</b> 		&egrave; assicurata dalla raggiungibilit&agrave; e osservabilit&agrave; del sistema.
+</li>
+<li><b>C</b> 		&egrave; una propriet&agrave; delle evoluzioni libere nello stato;
+</li>
+<li><b>D</b> 		riguarda la limitatezza delle uscite rispetto all&rsquo;ingresso;
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		A cosa serve in una rete in area locale (LAN) un protocollo di accesso multiplo?
+
+<ul>
+<li><b>A</b> 		ad instradare le unit&agrave; informative nella LAN
+</li>
+<li><b>B</b> 		a permettere ad utenti differenti la condivisione di una risorsa comune (es. canale di comunicazione) 
+</li>
+<li><b>C</b> 		a velocizzare la comunicazione attraverso una LAN
+</li>
+<li><b>D</b> 		ad evitare che utenti differenti collidano durante la trasmissione su una risorsa comune (es. canale di comunicazione)
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>B</b> L&#x27;esecuzione del metodo non termina.
+</li>
+<li><b>C</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>D</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Dato il seguente programma:
+<pre>
+import java.util.*; 
+class Test {
+	public static void main (String args[]) {
+		Object a = new HashSet();
+		System.out.print((a instanceof Set)+&quot;,&quot;);
+		System.out.print(a instanceof SortedSet);
+	}
+}
+</pre>
+Qual&#x27;&egrave; il risultato della compilazione ed esecuzione del programma ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Stampa:false,true
+</li>
+<li><b>B</b> 		Stampa:false,false
+</li>
+<li><b>C</b> 		Stampa:true,true
+</li>
+<li><b>D</b> 		Stampa:true,false
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Il massimo numero di nodi di un albero binario di altezza h &egrave;
+
+<ul>
+<li><b>A</b> 		2<sup>h</sup>
+</li>
+<li><b>B</b> 		2<sup>h+1</sup>-1
+</li>
+<li><b>C</b> 		2h
+</li>
+<li><b>D</b> 		&#x23A3;log<sub>2</sub> h&#x23A6;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Lo scopo di una memoria cache &egrave;:
+
+<ul>
+<li><b>A</b> 		Fornire uno spazio di memoria condiviso tra pi&ugrave; processi per consentire loro di comunicare 
+</li>
+<li><b>B</b> 		Sfruttare le propriet&agrave; di localit&agrave; dei programmi per velocizzare gli accessi a memoria
+</li>
+<li><b>C</b> 		Permettere a pi&ugrave; core di accedere in parallelo alla stessa zona di memoria fisica
+</li>
+<li><b>D</b> 		Garantire protezione della memoria in modo che un processo non possa accedere allo spazio logico di un altro processo 
+</li>
+</ul>
+</body></html>

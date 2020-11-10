@@ -1,0 +1,185 @@
+<!-- 44 -->
+<html><HEAD><TITLE>Test VCA - test numero 44</TITLE><head><body>
+<center><h2>Test VCA - test numero 44</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente scrivere la classe in un file contenente la dichiarazione <tt>class p.C { ... }</tt>
+</li>
+<li><b>B</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente scrivere la classe in un file contenente la dichiarazione <tt>package p; class C { ... }</tt>
+</li>
+<li><b>C</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente scrivere la classe in un file contenente la direttiva <tt>package p</tt>;
+</li>
+<li><b>D</b> Per definire una classe <tt>C</tt> appartenente al package <tt>p</tt> &egrave; sufficiente creare una directory <tt>p</tt> e scrivere la classe in un file all&#x27;interno della directory <tt>p</tt> contenente la dichiarazione <tt>package p; class C { ... }</tt>;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Qual &egrave; il costo di cancellazione di una chiave in un albero di ricerca binario (BST)? 
+
+<ul>
+<li><b>A</b> 		O(n)
+</li>
+<li><b>B</b> 		O(1)
+</li>
+<li><b>C</b> 		O(n log n)
+</li>
+<li><b>D</b> 		O(log n)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Una sola delle seguenti istruzioni compila correttamente senza generare errori o messaggi di avviso (warning). Quale ? (Si ricorda che ArrayList e LinkedList implementano l&#x27;interfaccia List e che List a sua volta estende l&#x27;interfaccia Collection)
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		List&lt;Object&gt; x = new LinkedList&lt;? extends Object&gt;();
+</li>
+<li><b>B</b> 		Collection&lt;?&gt; x = new ArrayList&lt;String&gt;();
+</li>
+<li><b>C</b> 		List&lt;Object&gt; x = new Collection&lt;Object&gt;();
+</li>
+<li><b>D</b> 		Collection&lt;Object&gt; x = new ArrayList&lt;String&gt;();
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Qual'&egrave; la dimensione tipica di una pagina in un sistema di memoria virtuale?
+
+<ul>
+<li><b>A</b> 		64 byte
+</li>
+<li><b>B</b> 		4 MB
+</li>
+<li><b>C</b> 		64 KB
+</li>
+<li><b>D</b> 		4 KB
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Consideriamo la relazione <tt>Persona(nome,citta,eta)</tt>, che memorizza il nome, l&#x27;et&agrave; e la citt&agrave; di residenza delle persone. Per ogni citt&agrave;, si vuole calcolare il numero delle persone maggiorenni (la cui et&agrave; &egrave; maggiore di 18) che vivono in quella citt&agrave;. Una sola delle seguenti affermazioni &egrave;  vera. Quale?
+
+<ul>
+<li><b>A</b> 		La query SQL corretta &egrave;:
+<pre>
+SELECT count(*)
+FROM Persona
+GROUP BY citta, eta
+</pre>
+</li>
+<li><b>B</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+WHERE eta &gt; 18
+GROUP BY citta
+</pre>
+</li>
+<li><b>C</b> 		Non esiste alcuna query SQL che calcola i dati voluti;
+</li>
+<li><b>D</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+GROUP BY citta
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+<li><b>B</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+<li><b>C</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Quale &egrave; la funzione principale che deve svolgere un router di una rete Internet
+
+<ul>
+<li><b>A</b> 		assegnare indirizzi IP ai terminali della rete Internet (Host)
+</li>
+<li><b>B</b> 		effettuare l&rsquo;istradamento dei pacchetti IP in rete
+</li>
+<li><b>C</b> 		effettuare l&rsquo;indirizzamento dei pacchetti IP
+</li>
+<li><b>D</b> 		permettere la conversione di indirizzi IP mnemonici in numerici (es: www.uniroma1.it in 151.100.27.3)
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale fra le seguenti <b>di norma</b> non &egrave; una propriet&agrave; delle funzioni hash ? 
+
+<ul>
+<li><b>A</b> 		Iniettivit&agrave;
+</li>
+<li><b>B</b> 		Suriettivit&agrave;
+</li>
+<li><b>C</b> 		Determinismo
+</li>
+<li><b>D</b> 		Tempo di calcolo indipendente dal numero di chiavi in tabella
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		I modi naturali
+
+<ul>
+<li><b>A</b> 		coincidono col l&rsquo;evoluzione libera.
+</li>
+<li><b>B</b> 		compongono l&rsquo;evoluzione libera;
+</li>
+<li><b>C</b> 		sono funzioni del tempo aperiodiche e pseudoperiodiche;
+</li>
+<li><b>D</b> 		sono invarianti sottocampionamento dell&rsquo;ingresso;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Si consideri la seguente espressione Java: <tt>a==b</tt>, dove <tt>a</tt> e <tt>b</tt> sono riferimenti ad array di <tt>int</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;espressione vale sempre <tt>false</tt>, indipendentemente dal contenuto di <tt>a</tt> e <tt>b</tt>.
+</li>
+<li><b>B</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> contengono lo stesso indirizzo, cio&egrave; puntano allo stesso array.
+</li>
+<li><b>C</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> sono riferimenti a due array che contengono gli stessi interi nello stesso ordine.
+</li>
+<li><b>D</b> 		L&#x27;espressione &egrave; errata poiche&#x301; l&#x27;operatore <tt>==</tt> non &egrave; applicabile a riferimenti ad array.
+</li>
+</ul>
+</body></html>

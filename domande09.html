@@ -1,0 +1,203 @@
+<!-- 9 -->
+<html><HEAD><TITLE>Test VCA - test numero 9</TITLE><head><body>
+<center><h2>Test VCA - test numero 9</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		L&#x27;assegnazione degli autovalori consente di	
+
+<ul>
+<li><b>A</b> 		effettuare la reiezione completa dei disturbi.
+</li>
+<li><b>B</b> 		progettare un controllore a dimensione minima;
+</li>
+<li><b>C</b> 		controllare la risposta transitoria;
+</li>
+<li><b>D</b> 		ricostruire asintoticamente lo stato del processo;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache ad indirizzamento diretto contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		4
+</li>
+<li><b>C</b> 		8
+</li>
+<li><b>D</b> 		2
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		In un albero binario completo di n nodi l&#x27;altezza &egrave;
+
+<ul>
+<li><b>A</b> 		&#x3F4;(1)
+</li>
+<li><b>B</b> 		&#x3F4;(n log n)
+</li>
+<li><b>C</b> 		&#x3F4;(log n)
+</li>
+<li><b>D</b> 		&#x3F4;(n)
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Quali parti della dichiarazione di un metodo costituiscono la sua &quot;segnatura&quot; ?
+
+<ul>
+<li><b>A</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali ed il tipo del valore restituito
+</li>
+<li><b>B</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali, il tipo del valore restituito e gli eventuali modificatori.
+</li>
+<li><b>C</b> Il nome del metodo ed il tipo, numero ed ordine dei parametri formali.
+</li>
+<li><b>D</b> Il nome del metodo, il tipo dei parametri formali ed il tipo del valore restituito.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quale delle seguenti asserzioni su un grafo semplice &egrave; <b>falsa</b>? (n = num. vertici, m = num. archi)
+
+<ul>
+<li><b>A</b> 		Il grado di un vertice pu&ograve; essere un qualunque numero in {0, 1, 2, &hellip;, n-1}
+</li>
+<li><b>B</b> 		&Egrave; certamente connesso
+</li>
+<li><b>C</b> 		La somma dei gradi dei vertici &egrave; 2m
+</li>
+<li><b>D</b> 		m &isin; O(n<sup>2</sup>)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+<li><b>B</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+<li><b>D</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		A cosa servono le procedure di controllo d&rsquo;errore effettuate in strati protocollari quali quello di collegamento o di trasporto (es: Forward Error Correction (FEC) e Automatic Repeat Request ARQ)?
+
+<ul>
+<li><b>A</b> 		solo verificare la giusta sequenza delle unit&agrave; informative ricevute
+</li>
+<li><b>B</b> 		a verificare la presenza di errori nella unit&agrave; informative ricevute ed eventualmente correggerli
+</li>
+<li><b>C</b> 		a garantire che le unit&agrave; informative trasmesse non vengano mai scartate dal ricevitore
+</li>
+<li><b>D</b> 		a numerare le unit&agrave; informative tramesse
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>B</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>C</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si considerino i seguenti metodi:
+<pre>
+public static int cosaFa(int a, int b) {
+	if (a&lt;b) return cosaFa(b-a);
+	else return cosaFa(a-b);
+}
+public static int cosaFa(int x) {
+	if (x&gt;0) return -x;
+	else return 0;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il programma &egrave; errato perch&egrave; contiene una definizione multipla del metodo cosaFa.
+</li>
+<li><b>B</b> 		L&#x27;invocazione <tt>cosaFa(a,b)</tt> restituisce sempre <tt>0</tt>.
+</li>
+<li><b>C</b> 		L&#x27;invocazione <tt>cosaFa(a,b)</tt> restituisce il valore assoluto della differenza fra <tt>a</tt> e <tt>b</tt>, cambiato di segno.
+</li>
+<li><b>D</b> 		L&#x27;invocazione <tt>cosaFa(a)</tt> restituisce il valore di <tt>a</tt> cambiato di segno.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul modello Entit&agrave;-Relazione &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un identificatore di una relazione pu&ograve; comprendere sia i ruoli coinvolti in tale relazione sia gli attributi definiti per tale relazione
+</li>
+<li><b>B</b> 		Un identificatore si pu&ograve; definire su una relazione solo se tale relazione non &egrave; in relazione ISA con un&#x27;altra.
+</li>
+<li><b>C</b> 		Solo sulle entit&agrave; si possono definire gli identificatori;
+</li>
+<li><b>D</b> 		Gli identificatori si possono definire sia sulle entit&agrave; sia sugli attributi;
+</li>
+</ul>
+</body></html>

@@ -1,0 +1,209 @@
+<!-- 77 -->
+<html><HEAD><TITLE>Test VCA - test numero 77</TITLE><head><body>
+<center><h2>Test VCA - test numero 77</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri la classe Prova cos&igrave; definita:
+<pre>
+private class Prova{
+	public int x;
+	public static int y;
+}
+</pre>
+Una solo dei seguenti metodi non &egrave; corretto e non potrebbe apparire nella definizione di <tt>Prova</tt>. Quale?
+
+<ul>
+<li><b>A</b> <tt>public static void metodoD() {y++;}</tt>
+</li>
+<li><b>B</b> <tt>public void metodoB() {y++;}</tt>
+</li>
+<li><b>C</b> <tt>public void metodoA() {x++;}</tt>
+</li>
+<li><b>D</b> <tt>public static void metodoC() {x++;}</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Quale fra le seguenti <b>di norma</b> non &egrave; una propriet&agrave; delle funzioni hash ? 
+
+<ul>
+<li><b>A</b> 		Tempo di calcolo indipendente dal numero di chiavi in tabella
+</li>
+<li><b>B</b> 		Determinismo
+</li>
+<li><b>C</b> 		Iniettivit&agrave;
+</li>
+<li><b>D</b> 		Suriettivit&agrave;
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Quanto grande &egrave; lo spazio di memoria virtuale che &egrave; possibile indirizzare usando un puntatore a 16 bit?
+
+<ul>
+<li><b>A</b> 		64 GB
+</li>
+<li><b>B</b> 		64 MB
+</li>
+<li><b>C</b> 		64 KB
+</li>
+<li><b>D</b> 		64 TB
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+		Nell&#x27;ambito del modello relazionale dei dati il join naturale &egrave;
+
+<ul>
+<li><b>A</b> 		un metodo per progettare in modo corretto lo schema di una relazione;
+</li>
+<li><b>B</b> 		un operatore che si applica a due relazioni e che combina le tuple delle due relazioni sulla base della uguaglianza degli attributi in comune alle due relazioni;
+</li>
+<li><b>C</b> 		un operatore che si applica a due relazioni e che calcola l&#x27;unione delle tuple di tali relazioni;
+</li>
+<li><b>D</b> 		un operatore che calcola uno schema di relazione unendo gli attributi di una relazione con quelli di un&#x27;altra relazione
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		In un sistema di controllo con reazione dall&#x27;uscita &egrave; possibile assegnare ad arbitrio tutti gli autovalori 
+
+<ul>
+<li><b>A</b> 		se e solo se tutti gli autovalori del processo sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti gli autovalori del processo irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti gli autovalori del processo raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>D</b> 		se e solo se tutti gli autovalori del processo sono raggiungibili ed osservabili.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Si consideri un&rsquo;architettura di comunicazione protocollare a strati (layered); Le entit&agrave; appartenenti a strati adiacenti (es. strato N e strato N-1):
+
+<ul>
+<li><b>A</b> 		comunicano direttamente tra loro solo nel caso di N=2
+</li>
+<li><b>B</b> 		comunicano virtualmente tra loro, attraverso la mediazione delle entit&agrave; di strato inferiore
+</li>
+<li><b>C</b> 		comunicano direttamente tra loro se appartengono allo stesso sistema
+</li>
+<li><b>D</b> 		non hanno esigenze di comunicazione reciproca
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+import java.util.*;
+public class Test {
+	public static void main(String[] args){
+		List&lt;Integer&gt; l = new ArrayList&lt;Integer&gt;();
+		l.add(new Integer(1));
+		l.add(new Integer(2)); 
+		l.add(new Integer(3));
+		... // ISTRUZIONE A QUI
+		while (i.hasNext()) {
+			int q;
+			... // ISTRUZIONE B QUI
+			System.out.println(q*q);
+		}
+	}
+}
+</pre>
+Mettendo al posto delle istruzioni mancanti le seguenti istruzioni A e B, una sola tra queste combinazione &egrave; errata e non produce il risultato di stampare i numeri 1, 4, 9. Quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		A: Iterator i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+<li><b>B</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = (int)i.next();
+
+</li>
+<li><b>C</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = i.next();
+
+</li>
+<li><b>D</b> 		A: Iterator&lt;Object&gt; i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente? 
+
+<ul>
+<li><b>A</b> 		In profondit&agrave; con ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In profondit&agrave; con ordine posticipato (post-order)
+</li>
+<li><b>C</b> 		In ampiezza
+</li>
+<li><b>D</b> 		In profondit&agrave; con ordine simmetrico (in-order)
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaCiclo</tt>, riportata di seguito:
+<pre>
+import javax.swing.JOptionPane;
+public class ProvaCiclo {
+	public static void main (String[] args) {
+		int i=Integer.parseInt (JOptionPane.showInputDialog ("Immetti un intero positivo"));
+		while (i>0) {
+			System.out.println (i);
+			i--;
+		}
+	} 
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		La classe <tt>ProvaCiclo</tt> causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile stabilire prima dell&#x27;esecuzione quante iterazioni verranno eseguite all&#x27;interno del metodo main.
+</li>
+<li><b>B</b> 		Il metodo <tt>main</tt> contiene un esempio di ciclo indefinito.
+</li>
+<li><b>C</b> 		Se il numero immesso dall&#x27;utente &egrave; un intero positivo, vengono stampati gli interi da 1 ad i in ordine crescente.
+</li>
+<li><b>D</b> 		Il metodo <tt>main</tt> contiene un esempio di ciclo definito.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+<li><b>B</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>C</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>D</b> L&#x27;esecuzione del metodo non termina.
+</li>
+</ul>
+</body></html>

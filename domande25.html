@@ -1,0 +1,176 @@
+<!-- 25 -->
+<html><HEAD><TITLE>Test VCA - test numero 25</TITLE><head><body>
+<center><h2>Test VCA - test numero 25</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+		Gli autovalori di un sistema ad anello chiuso coincidono con 
+
+<ul>
+<li><b>A</b> 		i poli della funzione di trasferimento ad anello chiuso pi&ugrave; eventuali autovalori nascosti;
+</li>
+<li><b>B</b> 		i poli della funzione di trasferimento ad anello chiuso;
+</li>
+<li><b>C</b> 		i poli della funzione di trasferimento ad anello aperto pi&ugrave; eventuali autovalori nascosti;
+</li>
+<li><b>D</b> 		i poli della funzione di trasferimento ad anello aperto.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Dato il seguente programma:
+<pre>
+import java.util.*; 
+class Test {
+	public static void main (String args[]) {
+		Object a = new HashSet();
+		System.out.print((a instanceof Set)+&quot;,&quot;);
+		System.out.print(a instanceof SortedSet);
+	}
+}
+</pre>
+Qual&#x27;&egrave; il risultato della compilazione ed esecuzione del programma ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Stampa:true,true
+</li>
+<li><b>B</b> 		Stampa:false,false
+</li>
+<li><b>C</b> 		Stampa:false,true
+</li>
+<li><b>D</b> 		Stampa:true,false
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Quali parti della dichiarazione di un metodo costituiscono la sua &quot;segnatura&quot; ?
+
+<ul>
+<li><b>A</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali, il tipo del valore restituito e gli eventuali modificatori.
+</li>
+<li><b>B</b> Il nome del metodo, il tipo dei parametri formali ed il tipo del valore restituito.
+</li>
+<li><b>C</b> Il nome del metodo ed il tipo, numero ed ordine dei parametri formali.
+</li>
+<li><b>D</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali ed il tipo del valore restituito
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache ad indirizzamento diretto contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		2
+</li>
+<li><b>B</b> 		4
+</li>
+<li><b>C</b> 		1
+</li>
+<li><b>D</b> 		8
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quale fra le seguenti <b>di norma</b> non &egrave; una propriet&agrave; delle funzioni hash ? 
+
+<ul>
+<li><b>A</b> 		Iniettivit&agrave;
+</li>
+<li><b>B</b> 		Suriettivit&agrave;
+</li>
+<li><b>C</b> 		Determinismo
+</li>
+<li><b>D</b> 		Tempo di calcolo indipendente dal numero di chiavi in tabella
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+Si consideri il seguente metodo per il calcolo del fattoriale
+<pre>
+public static long fattoriale(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * fattoriale(n-1);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Lo Stack della Java Virtual Machine contiene, ad ogni istante, soltanto un record di attivazione relativo al metodo.
+</li>
+<li><b>B</b> Il numero di record di attivazione presenti nello stack quando il metodo viene invocato con valore <tt>0</tt> del parametro &egrave; <tt>n+1</tt>.
+</li>
+<li><b>C</b> Non &egrave; possibile stabilire a priori il numero massimo di record di attivazione che saranno presenti nello stack in seguito all&#x27;invocazione del metodo.
+</li>
+<li><b>D</b> Il numero massimo di record di attivazione presenti nello stack a seguito dell&#x27;invocazione del metodo non dipende da <tt>n</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Quale tipologia di visita in profondit&agrave; di un albero risulta asintoticamente pi&ugrave; rapida? 
+
+<ul>
+<li><b>A</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>B</b> 		In ordine posticipato (post-order)
+</li>
+<li><b>C</b> 		In ordine anticipato (pre-order)
+</li>
+<li><b>D</b> 		Tutte a pari merito 
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni &egrave; vera. Quale? Il tempo di vita di una variabile di istanza coincide con il tempo di vita:
+
+<ul>
+<li><b>A</b> 		dell&#x27;oggetto a cui appartiene.
+</li>
+<li><b>B</b> 		del metodo che per primo la accede.
+</li>
+<li><b>C</b> 		del programma in cui viene usata.
+</li>
+<li><b>D</b> 		della classe a cui appartiene.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Si consideri un&rsquo;architettura di comunicazione protocollare a strati (layered); In un sistema terminale (es. un PC connesso in rete) il flusso informativo di dati attraversa gli strati protocollari:
+
+<ul>
+<li><b>A</b> 		senza seguire un particolare ordine gerarchico
+</li>
+<li><b>B</b> 		in senso gerarchico decrescente se il terminale &egrave; di origine
+</li>
+<li><b>C</b> 		sempre in senso gerarchico decrescente 
+</li>
+<li><b>D</b> 		sempre in senso gerarchico crescente
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La nozione di &quot;ruolo&quot; &egrave; una delle nozioni fondamentali del modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un ruolo identifica una partecipazione di una entit&agrave; ad una relazione;
+</li>
+<li><b>B</b> 		&quot;Ruolo&quot; &egrave; sinonimo di relazione;
+</li>
+<li><b>C</b> 		&quot;Ruolo&quot; &egrave; sinonimo di attributo;
+</li>
+<li><b>D</b> 		Un ruolo identifica una partecipazione di una entit&agrave; alla relazione ISA.
+</li>
+</ul>
+</body></html>

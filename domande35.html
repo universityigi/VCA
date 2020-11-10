@@ -1,0 +1,182 @@
+<!-- 35 -->
+<html><HEAD><TITLE>Test VCA - test numero 35</TITLE><head><body>
+<center><h2>Test VCA - test numero 35</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma Java
+<pre>
+class Nodo {
+	public Nodo next;
+	public Object elem;
+	public Nodo(Object e, Nodo n) {
+		elem=e; next=n;
+	}
+	public String toString() {
+		if (next==null) return elem.toString();
+		else return elem+" "+this.next;
+	} 
+}
+public class Test {
+	public static void main(String[] args) {
+		Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+		System.out.println(init);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Il programma &egrave; eseguito correttamente e stampa <tt>A null</tt>
+</li>
+<li><b>B</b> Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>C</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B C</tt>
+</li>
+<li><b>D</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Una risorsa di trasferimento &egrave; caratterizzata da una capacit&agrave; di C bit/s; la portata media (throughput) della risorsa (espressa in bit/s) 
+
+<ul>
+<li><b>A</b> 		non &egrave; mai maggiore di C
+</li>
+<li><b>B</b> 		pu&ograve; essere, eccezionalmente, maggiore di C
+</li>
+<li><b>C</b> 		ha normalmente valore numerico uguale a C
+</li>
+<li><b>D</b> 		non dipende dal valore di C
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		In generale, per progettare un sistema di controllo che permetta la reiezione completa del disturbo &egrave; necessario che:
+
+<ul>
+<li><b>A</b> 		il disturbo sia misurabile;
+</li>
+<li><b>B</b> 		il disturbo sia limitato;
+</li>
+<li><b>C</b> 		il disturbo sia illimitato.
+</li>
+<li><b>D</b> 		il controllore sia a dimensione minima;
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente? 
+
+<ul>
+<li><b>A</b> 		In profondit&agrave; con ordine posticipato (post-order)
+</li>
+<li><b>B</b> 		In ampiezza
+</li>
+<li><b>C</b> 		In profondit&agrave; con ordine anticipato (pre-order)
+</li>
+<li><b>D</b> 		In profondit&agrave; con ordine simmetrico (in-order)
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo (il cui corpo &egrave; volutamente privo di indentazione):
+<pre>
+public static int f (int a, int b, int c) {
+	if (a>b)
+	if (b>c)
+	return a;
+	else
+	return c;
+	return b;
+}
+</pre>
+Si assuma che il metodo venga invocato con i seguenti paramentri attuali: <tt>f(10, 5, 7)</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo causa un errore a tempo di esecuzione, perche&#x301; la JVM non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+<li><b>B</b> 		L&#x27;<tt>else</tt> fa riferimento al secondo <tt>if</tt>. Il metodo restituisce quindi <tt>7</tt>.
+</li>
+<li><b>C</b> L&#x27;<tt>else</tt> fa riferimento al primo <tt>if</tt>. Il metodo restituisce quindi <tt>5</tt>.
+</li>
+<li><b>D</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; il compilatore non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; <b>falsa</b>?
+
+<ul>
+<li><b>A</b> 		log (n<sup>10</sup>) &isin; O(log n)
+</li>
+<li><b>B</b> 		n<sup>2</sup> &isin; O(n<sup>3</sup>)
+</li>
+<li><b>C</b> 		n log n &isin; &Omega;(n)
+</li>
+<li><b>D</b> 		n + log n &isin; O(log n)
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+		Qual'&egrave; il tempo tipico di accesso (latenza) a una memoria DRAM?
+
+<ul>
+<li><b>A</b> 		1-10 nanosecondi
+</li>
+<li><b>B</b> 		10-100 nanosecondi
+</li>
+<li><b>C</b> 		1-10 microsecondi
+</li>
+<li><b>D</b> 		1-10 millisecondi
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Si consideri uno schema Entit&agrave;-Relazione in cui l&#x27;entit&agrave; STUDENTE ha l&#x27;attributo MATRICOLA ed &egrave; legata all&#x27;entit&agrave; UNIVERSIT&Agrave; dalla relazione ISCRITTO. Si vuole esprimere nello schema il vincolo che non esistono due studenti iscritti alla stessa universit&agrave; che hanno la stessa matricola. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il vincolo &egrave; gi&agrave; implicitamente espresso nello schema descritto.
+</li>
+<li><b>B</b> 		Si pu&ograve; esprimere il vincolo definendo l&#x27;attributo MATRICOLA un identificatore per STUDENTE;
+</li>
+<li><b>C</b> 		Poich&eacute; non &egrave; possibile esprimere il vincolo usando le primitive del modello Entit&agrave;-Relazione, si deve ricorrere ad un vincolo esterno;
+</li>
+<li><b>D</b> 		Si pu&ograve; esprimere il vincolo definendo l&#x27;attributo MATRICOLA ed il ruolo STUDENTE nella relazione ISCRITTO come un identificatore esterno per STUDENTE;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>B</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>C</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>D</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+		Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		int a[10][10] = new int[][];
+</li>
+<li><b>B</b> 		int [a][] = new int[10][10];
+</li>
+<li><b>C</b> 		int a[][] = new int[10][10];
+</li>
+<li><b>D</b> 		int a[][] = new int[10,10]
+</li>
+</ul>
+</body></html>

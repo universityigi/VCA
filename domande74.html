@@ -1,0 +1,188 @@
+<!-- 74 -->
+<html><HEAD><TITLE>Test VCA - test numero 74</TITLE><head><body>
+<center><h2>Test VCA - test numero 74</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Un processo &egrave; in stato ready se:
+
+<ul>
+<li><b>A</b> 		E&rsquo; terminato e le risorse che detiene (es. memoria) stanno per essere rilasciate per poter essere riutilizzate da altri processi
+</li>
+<li><b>B</b> 		E&rsquo; in attesa di un evento asincrono come la terminazione di un&rsquo;operazione di lettura da un dispositivo esterno
+</li>
+<li><b>C</b> 		E&rsquo; nelle condizioni di essere eseguito, ma non lo &egrave; perch&eacute; tutti i core delle CPU disponibili nel sistema sono impegnati nell&rsquo;esecuzione di altri processi
+</li>
+<li><b>D</b> 		E&rsquo; correntemente in esecuzione su uno dei core disponibili nel sistema
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+		Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a pacchetto &egrave; indicato
+
+<ul>
+<li><b>A</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente continue (es: voce o streaming)
+</li>
+<li><b>B</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente intermittenti (es: dati On-Off)
+</li>
+<li><b>C</b> 		soprattutto quando le sorgenti di traffico emettono ad alto ritmo binario
+</li>
+<li><b>D</b> 		in qualsiasi circostanza, indipendentemente dal tipo di traffico offerto dalle sorgenti
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Overloading{
+	public void foo(String s) {}
+	public void foo(String s, int i) {}
+	public String foo(String s) {return s;}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il codice compila correttamente.
+</li>
+<li><b>B</b> Il compilatore da un errore di compilazione poich&egrave; il primo e l&#x27;ultimo metodo hanno la stessa firma.
+</li>
+<li><b>C</b> Il compilatore da un errore di compilazione poich&egrave; i metodi hanno lo stesso nome.
+</li>
+<li><b>D</b> Il compilatore da un errore di compilazione poich&egrave; il corpo dei metodi &egrave; vuoto.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una qualsiasi directory.
+</li>
+<li><b>B</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>C</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>D</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una qualsiasi directory.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		0,4
+</li>
+<li><b>B</b> 		2,6,6
+</li>
+<li><b>C</b> 		0,3,4
+</li>
+<li><b>D</b> 		3,4,5
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		La fase di progettazione logica di basi di dati procede attraverso i passi di ristrutturazione dello schema concettuale, traduzione diretta e ristrutturazione dello schema logico. Una sola delle seguenti affermazioni sulla progettazione logica &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		Dopo la traduzione diretta non ci sono tabelle relazionali che ammettono valori nulli nei propri attributi;
+</li>
+<li><b>B</b> 		La ristrutturazione dello schema logico si effettua solo se ci sono attributi composti, attributi multivalore o relazioni ISA nello schema concettuale;
+</li>
+<li><b>C</b> 		La traduzione diretta ha lo scopo di derivare lo schema logico corrispondente allo schema concettuale ristrutturato, traducendo ogni entit&agrave; in una tabella, ed ogni relazione non accorpata in una tabella.
+</li>
+<li><b>D</b> 		La ristrutturazione dello schema concettuale ha lo scopo di ottimizzare le tabelle relazionali;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+		Il minimo numero di foglie di un albero binario di n nodi &egrave;
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		2<sup>n</sup>
+</li>
+<li><b>C</b> 		n-1
+</li>
+<li><b>D</b> 		&#x23A3;log<sub>2</sub> n&#x23A6;
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale fra le seguenti <b>di norma</b> non &egrave; una propriet&agrave; delle funzioni hash ? 
+
+<ul>
+<li><b>A</b> 		Determinismo
+</li>
+<li><b>B</b> 		Tempo di calcolo indipendente dal numero di chiavi in tabella
+</li>
+<li><b>C</b> 		Suriettivit&agrave;
+</li>
+<li><b>D</b> 		Iniettivit&agrave;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		I modi naturali
+
+<ul>
+<li><b>A</b> 		sono invarianti sottocampionamento dell&rsquo;ingresso;
+</li>
+<li><b>B</b> 		coincidono col l&rsquo;evoluzione libera.
+</li>
+<li><b>C</b> 		compongono l&rsquo;evoluzione libera;
+</li>
+<li><b>D</b> 		sono funzioni del tempo aperiodiche e pseudoperiodiche;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo:
+<pre>
+public static void stampa()	{
+	for (int i=1; i<10; i=i+i) {
+		if (i==5) break;
+		System.out.print (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione <tt>break</tt> all&#x27;interno del metodo <tt>stampa()</tt> non viene mai eseguita.
+</li>
+<li><b>B</b> 		Il metodo stampa <tt>123456789</tt>
+</li>
+<li><b>C</b> 		Il metodo stampa <tt>124</tt>
+</li>
+<li><b>D</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile dichiarare una variabile nell&#x27;intestazione di un&#x27;istruzione <tt>for</tt>.
+</li>
+</ul>
+</body></html>

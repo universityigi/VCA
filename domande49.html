@@ -1,0 +1,209 @@
+<!-- 49 -->
+<html><HEAD><TITLE>Test VCA - test numero 49</TITLE><head><body>
+<center><h2>Test VCA - test numero 49</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Overloading{
+	public void foo(String s) {}
+	public void foo(String s, int i) {}
+	public String foo(String s) {return s;}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il compilatore da un errore di compilazione poich&egrave; i metodi hanno lo stesso nome.
+</li>
+<li><b>B</b> Il compilatore da un errore di compilazione poich&egrave; il primo e l&#x27;ultimo metodo hanno la stessa firma.
+</li>
+<li><b>C</b> Il compilatore da un errore di compilazione poich&egrave; il corpo dei metodi &egrave; vuoto.
+</li>
+<li><b>D</b> Il codice compila correttamente.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impone che non esistono due tuple di R con lo stessao valore dell&#x27;attributo A;
+</li>
+<li><b>B</b> 		Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impone che ogni valore che compare in A compare anche nella chiave primaria di Q;
+</li>
+<li><b>C</b> 		Un vincolo di foreign key (chiave esterna) tra un attributo A di una relazione R ed una relazione Q impone che anche la chiave di Q sia un attributo di nome A
+</li>
+<li><b>D</b> 		Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impllica che il valore nullo non pu&ograve; comparire in A.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Qual'&egrave; la dimensione tipica di una pagina in un sistema di memoria virtuale?
+
+<ul>
+<li><b>A</b> 		4 KB
+</li>
+<li><b>B</b> 		64 KB
+</li>
+<li><b>C</b> 		64 byte
+</li>
+<li><b>D</b> 		4 MB
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri la classe Prova cos&igrave; definita:
+<pre>
+private class Prova{
+	public int x;
+	public static int y;
+}
+</pre>
+Una solo dei seguenti metodi non &egrave; corretto e non potrebbe apparire nella definizione di <tt>Prova</tt>. Quale?
+
+<ul>
+<li><b>A</b> <tt>public static void metodoC() {x++;}</tt>
+</li>
+<li><b>B</b> <tt>public static void metodoD() {y++;}</tt>
+</li>
+<li><b>C</b> <tt>public void metodoB() {y++;}</tt>
+</li>
+<li><b>D</b> <tt>public void metodoA() {x++;}</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quale delle seguenti asserzioni su un grafo semplice &egrave; <b>falsa</b>? (n = num. vertici, m = num. archi)
+
+<ul>
+<li><b>A</b> 		&Egrave; certamente connesso
+</li>
+<li><b>B</b> 		m &isin; O(n<sup>2</sup>)
+</li>
+<li><b>C</b> 		Il grado di un vertice pu&ograve; essere un qualunque numero in {0, 1, 2, &hellip;, n-1}
+</li>
+<li><b>D</b> 		La somma dei gradi dei vertici &egrave; 2m
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>C</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+<li><b>B</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>C</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>D</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		2,6,6
+</li>
+<li><b>B</b> 		0,4
+</li>
+<li><b>C</b> 		3,4,5
+</li>
+<li><b>D</b> 		0,3,4
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Una risorsa di trasferimento &egrave; caratterizzata da una capacit&agrave; di C bit/s; la portata media (throughput) della risorsa (espressa in bit/s) 
+
+<ul>
+<li><b>A</b> 		non dipende dal valore di C
+</li>
+<li><b>B</b> 		ha normalmente valore numerico uguale a C
+</li>
+<li><b>C</b> 		pu&ograve; essere, eccezionalmente, maggiore di C
+</li>
+<li><b>D</b> 		non &egrave; mai maggiore di C
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		In un albero binario completo di n nodi l&#x27;altezza &egrave;
+
+<ul>
+<li><b>A</b> 		&#x3F4;(n)
+</li>
+<li><b>B</b> 		&#x3F4;(1)
+</li>
+<li><b>C</b> 		&#x3F4;(log n)
+</li>
+<li><b>D</b> 		&#x3F4;(n log n)
+</li>
+</ul>
+</body></html>

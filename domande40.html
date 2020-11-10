@@ -1,0 +1,208 @@
+<!-- 40 -->
+<html><HEAD><TITLE>Test VCA - test numero 40</TITLE><head><body>
+<center><h2>Test VCA - test numero 40</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; errata?
+
+<ul>
+<li><b>A</b> 		a &or; b &equiv; &not;(&not;a &and; &not;b)
+</li>
+<li><b>B</b> 		a &#x27F7; b &equiv; &not;a &or; &not;b
+</li>
+<li><b>C</b> 		a &and; b &equiv; &not;(&not;a &or; &not;b)
+</li>
+<li><b>D</b> 		a &#x27F6; b &equiv; &not;a &or; b
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+<li><b>B</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+<li><b>D</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>C</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Si consideri la seguente espressione Java: <tt>a==b</tt>, dove <tt>a</tt> e <tt>b</tt> sono riferimenti ad array di <tt>int</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> sono riferimenti a due array che contengono gli stessi interi nello stesso ordine.
+</li>
+<li><b>B</b> 		L&#x27;espressione &egrave; errata poiche&#x301; l&#x27;operatore <tt>==</tt> non &egrave; applicabile a riferimenti ad array.
+</li>
+<li><b>C</b> 		L&#x27;espressione vale sempre <tt>false</tt>, indipendentemente dal contenuto di <tt>a</tt> e <tt>b</tt>.
+</li>
+<li><b>D</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> contengono lo stesso indirizzo, cio&egrave; puntano allo stesso array.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Sia <tt>R1(A,B,C)</tt> uno schema di relazione. Si consideri la seguente query espressa in SQL:
+<pre>
+SELECT C
+FROM R1 
+WHERE A=B
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usano le due operazioni di proiezione e selezione.
+</li>
+<li><b>B</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di proiezione dell&#x27;algebra relazionale;
+</li>
+<li><b>C</b> 		la query non corrisponde ad alcuna espressione dell&#x27;algebra relazionale;
+</li>
+<li><b>D</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di join dell&#x27;algebra relazionale;
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaSwitch</tt>, riportata di seguito:
+<pre>
+public class ProvaSwitch {
+	public static void conv(int x) {
+		switch (x) {
+			case 0:
+				System.out.print ("Zero");
+			case 1:
+				System.out.print ("Uno");
+				break;
+			default:
+				System.out.println ("Errore");
+		} 
+	}
+	public static void main (String[] x) {
+		for (int i=0; i<=2; i++)
+			conv (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoDue</tt>
+</li>
+<li><b>B</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoErrore</tt>
+</li>
+<li><b>C</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUno</tt>
+</li>
+<li><b>D</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoUnoErrore</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Parte del codice eseguibile delle funzioni di un processo &egrave; memorizzato nel segmento:
+
+<ul>
+<li><b>A</b> 		STACK
+</li>
+<li><b>B</b> 		CODE
+</li>
+<li><b>C</b> 		DATA
+</li>
+<li><b>D</b> 		HEAP
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		In un sistema interconnesso
+
+<ul>
+<li><b>A</b> 		il numero delle uscite &egrave; sempre maggiore del numero degli ingressi.
+</li>
+<li><b>B</b> 		la dimensione dello stato &egrave; pari alla soma delle dimensioni dei sottosistemi;
+</li>
+<li><b>C</b> 		l&rsquo;ingresso e sempre uguale alla somma degli ingressi;
+</li>
+<li><b>D</b> 		si pu&ograve; avere stabilit&agrave; interna in presenza di uno o pi&ugrave; sottosistemi instabili;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		costante
+</li>
+<li><b>B</b> 		lineare
+</li>
+<li><b>C</b> 		quadratico
+</li>
+<li><b>D</b> 		logaritmico
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Si consideri un&rsquo;architettura di comunicazione protocollare a strati (layered); In un sistema terminale (es. un PC connesso in rete) il flusso informativo di dati attraversa gli strati protocollari:
+
+<ul>
+<li><b>A</b> 		sempre in senso gerarchico decrescente 
+</li>
+<li><b>B</b> 		sempre in senso gerarchico crescente
+</li>
+<li><b>C</b> 		senza seguire un particolare ordine gerarchico
+</li>
+<li><b>D</b> 		in senso gerarchico decrescente se il terminale &egrave; di origine
+</li>
+</ul>
+</body></html>

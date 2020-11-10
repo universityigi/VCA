@@ -1,0 +1,213 @@
+<!-- 26 -->
+<html><HEAD><TITLE>Test VCA - test numero 26</TITLE><head><body>
+<center><h2>Test VCA - test numero 26</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Il massimo numero di nodi di un albero binario di altezza h &egrave;
+
+<ul>
+<li><b>A</b> 		2<sup>h</sup>
+</li>
+<li><b>B</b> 		2<sup>h+1</sup>-1
+</li>
+<li><b>C</b> 		2h
+</li>
+<li><b>D</b> 		&#x23A3;log<sub>2</sub> h&#x23A6;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		L&rsquo;interfaccia tra un Host (terminale) di Internet e la sotto-rete cui &egrave; connesso:
+
+<ul>
+<li><b>A</b> 		deve essere individuata dall&rsquo; indirizzo IP solo se la sotto-rete comprende un numero elevato di Host
+</li>
+<li><b>B</b> 		deve essere individuata sia attraverso un indirizzo IP globale, che attraverso un indirizzo locale (es. indirizzo Ethernet)
+</li>
+<li><b>C</b> 		pu&ograve; essere individuata dal solo indirizzo locale (es. indirizzo Ethernet) e non richiede un indirizzo IP globale
+</li>
+<li><b>D</b> 		pu&ograve; essere individuata dal solo indirizzo IP globale e non richiede un indirizzo locale (es. indirizzo Ethernet)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		La nozione di &quot;ruolo&quot; &egrave; una delle nozioni fondamentali del modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		&quot;Ruolo&quot; &egrave; sinonimo di relazione;
+</li>
+<li><b>B</b> 		&quot;Ruolo&quot; &egrave; sinonimo di attributo;
+</li>
+<li><b>C</b> 		Un ruolo identifica una partecipazione di una entit&agrave; alla relazione ISA.
+</li>
+<li><b>D</b> 		Un ruolo identifica una partecipazione di una entit&agrave; ad una relazione;
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public class PezzoMusicale {
+	public static void riproduci(PezzoMusicale i) {
+		i.play();
+	}
+	public void play() {
+		/* altro codice */
+	}
+}
+</pre>
+Quali delle seguenti istruzioni genera un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+PezzoMusicale.riproduci(canzone);
+</pre>
+</li>
+<li><b>B</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+canzone.riproduci(canzone);
+</pre>
+</li>
+<li><b>C</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+canzone.play();
+</pre>
+</li>
+<li><b>D</b> <pre>
+PezzoMusicale canzone = new PezzoMusicale();
+PezzoMusicale.play();
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>B</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>C</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>D</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		lineare
+</li>
+<li><b>B</b> 		costante
+</li>
+<li><b>C</b> 		quadratico
+</li>
+<li><b>D</b> 		logaritmico
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Overloading{
+	public void foo(String s) {}
+	public void foo(String s, int i) {}
+	public String foo(String s) {return s;}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il codice compila correttamente.
+</li>
+<li><b>B</b> Il compilatore da un errore di compilazione poich&egrave; il corpo dei metodi &egrave; vuoto.
+</li>
+<li><b>C</b> Il compilatore da un errore di compilazione poich&egrave; i metodi hanno lo stesso nome.
+</li>
+<li><b>D</b> Il compilatore da un errore di compilazione poich&egrave; il primo e l&#x27;ultimo metodo hanno la stessa firma.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		0,4
+</li>
+<li><b>B</b> 		0,3,4
+</li>
+<li><b>C</b> 		2,6,6
+</li>
+<li><b>D</b> 		3,4,5
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Un processo &egrave; stabilizzabile asintoticamente con reazione dall&#x27;uscita
+
+<ul>
+<li><b>A</b> 		se e solo se tutti i suoi autovalori sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti i suoi autovalori irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti i suoi autovalori sono raggiungibili ed osservabili.
+</li>
+<li><b>D</b> 		se e solo se tutti i suoi autovalori raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Le variabili statiche di un processo sono memorizzate nel segmento:
+
+<ul>
+<li><b>A</b> 		DATA
+</li>
+<li><b>B</b> 		STACK
+</li>
+<li><b>C</b> 		CODE
+</li>
+<li><b>D</b> 		HEAP
+</li>
+</ul>
+</body></html>

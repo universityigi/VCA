@@ -1,0 +1,172 @@
+<!-- 12 -->
+<html><HEAD><TITLE>Test VCA - test numero 12</TITLE><head><body>
+<center><h2>Test VCA - test numero 12</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Quali parti della dichiarazione di un metodo costituiscono la sua &quot;segnatura&quot; ?
+
+<ul>
+<li><b>A</b> Il nome del metodo ed il tipo, numero ed ordine dei parametri formali.
+</li>
+<li><b>B</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali ed il tipo del valore restituito
+</li>
+<li><b>C</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali, il tipo del valore restituito e gli eventuali modificatori.
+</li>
+<li><b>D</b> Il nome del metodo, il tipo dei parametri formali ed il tipo del valore restituito.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Un blocco allocato dinamicamente con malloc/calloc da un processo &egrave; memorizzato nel segmento:
+
+<ul>
+<li><b>A</b> 		CODE
+</li>
+<li><b>B</b> 		HEAP
+</li>
+<li><b>C</b> 		STACK
+</li>
+<li><b>D</b> 		DATA
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Quale &egrave; la funzione principale che deve svolgere un router di una rete Internet
+
+<ul>
+<li><b>A</b> 		effettuare l&rsquo;istradamento dei pacchetti IP in rete
+</li>
+<li><b>B</b> 		effettuare l&rsquo;indirizzamento dei pacchetti IP
+</li>
+<li><b>C</b> 		assegnare indirizzi IP ai terminali della rete Internet (Host)
+</li>
+<li><b>D</b> 		permettere la conversione di indirizzi IP mnemonici in numerici (es: www.uniroma1.it in 151.100.27.3)
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Si consideri uno schema Entit&agrave;-Relazione in cui l&#x27;entit&agrave; STUDENTE ha l&#x27;attributo MATRICOLA ed &egrave; legata all&#x27;entit&agrave; UNIVERSIT&Agrave; dalla relazione ISCRITTO. Si vuole esprimere nello schema il vincolo che non esistono due studenti iscritti alla stessa universit&agrave; che hanno la stessa matricola. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Si pu&ograve; esprimere il vincolo definendo l&#x27;attributo MATRICOLA un identificatore per STUDENTE;
+</li>
+<li><b>B</b> 		Il vincolo &egrave; gi&agrave; implicitamente espresso nello schema descritto.
+</li>
+<li><b>C</b> 		Poich&eacute; non &egrave; possibile esprimere il vincolo usando le primitive del modello Entit&agrave;-Relazione, si deve ricorrere ad un vincolo esterno;
+</li>
+<li><b>D</b> 		Si pu&ograve; esprimere il vincolo definendo l&#x27;attributo MATRICOLA ed il ruolo STUDENTE nella relazione ISCRITTO come un identificatore esterno per STUDENTE;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaCiclo</tt>, riportata di seguito:
+<pre>
+import javax.swing.JOptionPane;
+public class ProvaCiclo {
+	public static void main (String[] args) {
+		int i=Integer.parseInt (JOptionPane.showInputDialog ("Immetti un intero positivo"));
+		while (i>0) {
+			System.out.println (i);
+			i--;
+		}
+	} 
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo <tt>main</tt> contiene un esempio di ciclo indefinito.
+</li>
+<li><b>B</b> 		La classe <tt>ProvaCiclo</tt> causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile stabilire prima dell&#x27;esecuzione quante iterazioni verranno eseguite all&#x27;interno del metodo main.
+</li>
+<li><b>C</b> 		Se il numero immesso dall&#x27;utente &egrave; un intero positivo, vengono stampati gli interi da 1 ad i in ordine crescente.
+</li>
+<li><b>D</b> 		Il metodo <tt>main</tt> contiene un esempio di ciclo definito.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Persona {
+	public String nome;
+	public int eta;
+	public static Persona[] creaDaArray(String[] nomi, int[] eta) {
+		if (nomi.length != eta.length) return null;
+		Persona[] v = new Persona[nomi.length];
+		for (int i=0; i&lt;v.length; ++i) {
+			v[i].nome = nomi[i];
+			v[i].eta  = eta[i];
+		}
+		return v; 
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni sul metodo <tt>creaDaArray</tt> &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo genera un errore di compilazione poiche&#x301; la variabile <tt>eta</tt> appare nella classe una volta con tipo <tt>int</tt> e una volta con tipo <tt>int[]</tt>.
+</li>
+<li><b>B</b> 		Assumendo che gli array <tt>nomi</tt> ed <tt>eta</tt> abbiano la stessa lunghezza, il metodo crea e restituisce un nuovo array di persone inizializzate con i dati contenuti negli array stessi.
+</li>
+<li><b>C</b> 		Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+<li><b>D</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		lineare
+</li>
+<li><b>B</b> 		costante
+</li>
+<li><b>C</b> 		quadratico
+</li>
+<li><b>D</b> 		logaritmico
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; errata?
+
+<ul>
+<li><b>A</b> 		a &#x27F7; b &equiv; &not;a &or; &not;b
+</li>
+<li><b>B</b> 		a &#x27F6; b &equiv; &not;a &or; b
+</li>
+<li><b>C</b> 		a &and; b &equiv; &not;(&not;a &or; &not;b)
+</li>
+<li><b>D</b> 		a &or; b &equiv; &not;(&not;a &and; &not;b)
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+		Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		int [a][] = new int[10][10];
+</li>
+<li><b>B</b> 		int a[10][10] = new int[][];
+</li>
+<li><b>C</b> 		int a[][] = new int[10][10];
+</li>
+<li><b>D</b> 		int a[][] = new int[10,10]
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Il sistema a tempo discreto equivalente ad un dato sistema a tempo continuo
+
+<ul>
+<li><b>A</b> 		riproduce agli istanti di campionamento le evoluzioni del sistema a tempo continuo;
+</li>
+<li><b>B</b> 		riproduce, agli istanti di campionamento, le evoluzioni del sistema a tempo continuo quando l&rsquo;ingresso ha un andamento particolare.
+</li>
+<li><b>C</b> 		si calcola mediante l&rsquo;approssimazione di Eulero della derivata del&rsquo;equazione di stato;
+</li>
+<li><b>D</b> 		&egrave; ottenuto campionando l&rsquo;ingresso e le evoluzioni nello stato e in uscita;
+</li>
+</ul>
+</body></html>

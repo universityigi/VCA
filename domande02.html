@@ -1,0 +1,192 @@
+<!-- 2 -->
+<html><HEAD><TITLE>Test VCA - test numero 2</TITLE><head><body>
+<center><h2>Test VCA - test numero 2</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Quanti cache miss pu&ograve; generare nel caso peggiore la scansione lineare di una lista collegata di n elementi assumendo una cache completamente associativa in cui ogni linea pu&ograve; contenere k nodi dell&rsquo;array?
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		k
+</li>
+<li><b>C</b> 		n
+</li>
+<li><b>D</b> 		n/k
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Quale categoria di grafi semplici (non orientati e privi di self-loop) non ammette una foresta ricoprente?
+
+<ul>
+<li><b>A</b> 		Grafi aciclici
+</li>
+<li><b>B</b> 		Grafi connessi
+</li>
+<li><b>C</b> 		Nessuna
+</li>
+<li><b>D</b> 		Grafi non connessi
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		quadratico
+</li>
+<li><b>B</b> 		logaritmico
+</li>
+<li><b>C</b> 		costante
+</li>
+<li><b>D</b> 		lineare
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>B</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+<li><b>C</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+<li><b>D</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>B</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>C</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>D</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		In generale, per progettare un sistema di controllo che permetta la reiezione completa del disturbo &egrave; necessario che:
+
+<ul>
+<li><b>A</b> 		il disturbo sia illimitato.
+</li>
+<li><b>B</b> 		il disturbo sia limitato;
+</li>
+<li><b>C</b> 		il disturbo sia misurabile;
+</li>
+<li><b>D</b> 		il controllore sia a dimensione minima;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Nel trasferimento di una stringa binaria di L bit su un mezzo fisico di lunghezza uguale a D km, l&rsquo;intervallo di tempo che intercorre tra l&rsquo;emissione del primo bit della stringa e la ricezione dell&rsquo;ultimo bit (e cio&egrave; il ritardo di trasferimento della stringa):
+
+<ul>
+<li><b>A</b> 		&egrave; inversamente proporzionale a L
+</li>
+<li><b>B</b> 		&egrave; inversamente proporzionale a D
+</li>
+<li><b>C</b> 		dipende in generale da L e da D
+</li>
+<li><b>D</b> 		dipende solo da D
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Persona {
+	public String nome;
+	public int eta;
+	public static Persona[] creaDaArray(String[] nomi, int[] eta) {
+		if (nomi.length != eta.length) return null;
+		Persona[] v = new Persona[nomi.length];
+		for (int i=0; i&lt;v.length; ++i) {
+			v[i].nome = nomi[i];
+			v[i].eta  = eta[i];
+		}
+		return v; 
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni sul metodo <tt>creaDaArray</tt> &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+<li><b>B</b> 		Assumendo che gli array <tt>nomi</tt> ed <tt>eta</tt> abbiano la stessa lunghezza, il metodo crea e restituisce un nuovo array di persone inizializzate con i dati contenuti negli array stessi.
+</li>
+<li><b>C</b> 		Il metodo genera un errore di compilazione poiche&#x301; la variabile <tt>eta</tt> appare nella classe una volta con tipo <tt>int</tt> e una volta con tipo <tt>int[]</tt>.
+</li>
+<li><b>D</b> 		Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+		Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		int a[][] = new int[10][10];
+</li>
+<li><b>B</b> 		int [a][] = new int[10][10];
+</li>
+<li><b>C</b> 		int a[][] = new int[10,10]
+</li>
+<li><b>D</b> 		int a[10][10] = new int[][];
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sull&#x27;operazione di full outer-join in SQL &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		Quando i due operandi non hanno valori nulli, il full outer-join coincide con il join dei due operandi; 
+</li>
+<li><b>B</b> 		Il full outer join si pu&ograve; eseguire solo se i due operandi hanno lo stesso schema di relazione.
+</li>
+<li><b>C</b> 		L&#x27;outer-join di due relazioni &egrave; una relazione in cui tutte le tuple del primo operando sono combinate con almeno una tupla del secondo operando;
+</li>
+<li><b>D</b> 		L&#x27;operazione di full outer-join elimina i duplicati di una relazione;
+</li>
+</ul>
+</body></html>

@@ -1,0 +1,220 @@
+<!-- 63 -->
+<html><HEAD><TITLE>Test VCA - test numero 63</TITLE><head><body>
+<center><h2>Test VCA - test numero 63</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; errata?
+
+<ul>
+<li><b>A</b> 		a &#x27F6; b &equiv; &not;a &or; b
+</li>
+<li><b>B</b> 		a &or; b &equiv; &not;(&not;a &and; &not;b)
+</li>
+<li><b>C</b> 		a &and; b &equiv; &not;(&not;a &or; &not;b)
+</li>
+<li><b>D</b> 		a &#x27F7; b &equiv; &not;a &or; &not;b
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+<li><b>B</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>C</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>D</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Si consideri un&rsquo;architettura di comunicazione protocollare a strati (layered); Le entit&agrave; appartenenti a strati adiacenti (es. strato N e strato N-1):
+
+<ul>
+<li><b>A</b> 		comunicano virtualmente tra loro, attraverso la mediazione delle entit&agrave; di strato inferiore
+</li>
+<li><b>B</b> 		comunicano direttamente tra loro se appartengono allo stesso sistema
+</li>
+<li><b>C</b> 		non hanno esigenze di comunicazione reciproca
+</li>
+<li><b>D</b> 		comunicano direttamente tra loro solo nel caso di N=2
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+import java.util.*;
+public class Test {
+	public static void main(String[] args){
+		List&lt;Integer&gt; l = new ArrayList&lt;Integer&gt;();
+		l.add(new Integer(1));
+		l.add(new Integer(2)); 
+		l.add(new Integer(3));
+		... // ISTRUZIONE A QUI
+		while (i.hasNext()) {
+			int q;
+			... // ISTRUZIONE B QUI
+			System.out.println(q*q);
+		}
+	}
+}
+</pre>
+Mettendo al posto delle istruzioni mancanti le seguenti istruzioni A e B, una sola tra queste combinazione &egrave; errata e non produce il risultato di stampare i numeri 1, 4, 9. Quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		A: Iterator&lt;Object&gt; i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+<li><b>B</b> 		A: Iterator i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+<li><b>C</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = (int)i.next();
+
+</li>
+<li><b>D</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = i.next();
+
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma Java
+<pre>
+class Nodo {
+	public Nodo next;
+	public Object elem;
+	public Nodo(Object e, Nodo n) {
+		elem=e; next=n;
+	}
+	public String toString() {
+		if (next==null) return elem.toString();
+		else return elem+" "+this.next;
+	} 
+}
+public class Test {
+	public static void main(String[] args) {
+		Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+		System.out.println(init);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Il programma &egrave; eseguito correttamente e stampa <tt>A null</tt>
+</li>
+<li><b>B</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B C</tt>
+</li>
+<li><b>C</b> Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>D</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Consideriamo la relazione <tt>Persona(nome,citta,eta)</tt>, che memorizza il nome, l&#x27;et&agrave; e la citt&agrave; di residenza delle persone. Per ogni citt&agrave;, si vuole calcolare il numero delle persone maggiorenni (la cui et&agrave; &egrave; maggiore di 18) che vivono in quella citt&agrave;. Una sola delle seguenti affermazioni &egrave;  vera. Quale?
+
+<ul>
+<li><b>A</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+GROUP BY citta
+</pre>
+</li>
+<li><b>B</b> 		Non esiste alcuna query SQL che calcola i dati voluti;
+</li>
+<li><b>C</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+WHERE eta &gt; 18
+GROUP BY citta
+</pre>
+</li>
+<li><b>D</b> 		La query SQL corretta &egrave;:
+<pre>
+SELECT count(*)
+FROM Persona
+GROUP BY citta, eta
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Si ricorda che il tipo float &egrave; rappresentato in Java da 32 bit, mentre il tipo double da 64 bit. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il numero di double distinti rappresentabili &egrave; maggiore del numero di float distinti rappresentabili.
+</li>
+<li><b>B</b> 		Il numero di float distinti rappresentabili &egrave; uguale al numero di double distinti rappresentabili, ma le operazioni aritmetiche su questi ultimi sono eseguite con minore precisione.
+</li>
+<li><b>C</b> 		Il numero di float distinti rappresentabili &egrave; uguale al numero di double distinti rappresentabili, ma le operazioni aritmetiche su questi ultimi sono eseguite con maggiore precisione.
+</li>
+<li><b>D</b> 		Il numero di float distinti rappresentabili &egrave; maggiore del numero di double distinti rappresentabili.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache ad indirizzamento diretto contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		4
+</li>
+<li><b>C</b> 		8
+</li>
+<li><b>D</b> 		2
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		In quale caso non &egrave; soddisfatta l&rsquo;implicazione &not;p &rArr; q: 
+
+<ul>
+<li><b>A</b> 		se p &egrave; vero e q &egrave; falso 
+</li>
+<li><b>B</b> 		se p &egrave; falso e q &egrave; vero 
+</li>
+<li><b>C</b> 		se p &egrave; falso e q &egrave; falso 
+</li>
+<li><b>D</b> 		se p &egrave; vero e q &egrave; vero 
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>B</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una qualsiasi directory.
+</li>
+<li><b>C</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una qualsiasi directory.
+</li>
+<li><b>D</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+</ul>
+</body></html>

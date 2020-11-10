@@ -1,0 +1,187 @@
+<!-- 70 -->
+<html><HEAD><TITLE>Test VCA - test numero 70</TITLE><head><body>
+<center><h2>Test VCA - test numero 70</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>B</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>C</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>D</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Qual &egrave; il costo di cancellazione di una chiave in un albero di ricerca binario (BST)? 
+
+<ul>
+<li><b>A</b> 		O(log n)
+</li>
+<li><b>B</b> 		O(1)
+</li>
+<li><b>C</b> 		O(n)
+</li>
+<li><b>D</b> 		O(n log n)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+<li><b>B</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+<li><b>D</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Il massimo numero di nodi di un albero binario di altezza h &egrave;
+
+<ul>
+<li><b>A</b> 		2<sup>h</sup>
+</li>
+<li><b>B</b> 		&#x23A3;log<sub>2</sub> h&#x23A6;
+</li>
+<li><b>C</b> 		2h
+</li>
+<li><b>D</b> 		2<sup>h+1</sup>-1
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaInit</tt>, riportata di seguito:
+<pre>
+public class ProvaInit {
+	private int x, y;
+	public int somma () {return x+y; }
+	public static void main (String[] args) {
+		ProvaInit p=new ProvaInit ();
+		p.x=10;
+		System.out.println (p.somma ());
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		La classe causa un errore a tempo di esecuzione, perche&#x301; la variabile <tt>y</tt> non &egrave; inizializzata.
+</li>
+<li><b>B</b> 		La classe compila correttamente. L&#x27;esecuzione del metodo <tt>main</tt> stampa <tt>10</tt>, perche&#x301; la variabile di istanza <tt>y</tt> viene automaticamente inizializzata a <tt>0</tt>.
+</li>
+<li><b>C</b> 		La classe causa un errore a tempo di compilazione, perche&#x301; la variabile <tt>x</tt> &egrave; privata e non vi si pu&ograve; accedere dal metodo <tt>main</tt>.
+</li>
+<li><b>D</b> 		La classe causa un errore a tempo di compilazione, perche&#x301; la variabile <tt>y</tt> non &egrave; inizializzata.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Quanti cache miss pu&ograve; generare nel caso peggiore la scansione lineare di una lista collegata di n elementi assumendo una cache completamente associativa in cui ogni linea pu&ograve; contenere k nodi dell&rsquo;array?
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		n/k
+</li>
+<li><b>C</b> 		k
+</li>
+<li><b>D</b> 		n
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si consideri la seguente classe:
+<pre>
+public class Overloading{
+	public void foo(String s) {}
+	public void foo(String s, int i) {}
+	public String foo(String s) {return s;}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il compilatore da un errore di compilazione poich&egrave; il corpo dei metodi &egrave; vuoto.
+</li>
+<li><b>B</b> Il compilatore da un errore di compilazione poich&egrave; i metodi hanno lo stesso nome.
+</li>
+<li><b>C</b> Il compilatore da un errore di compilazione poich&egrave; il primo e l&#x27;ultimo metodo hanno la stessa firma.
+</li>
+<li><b>D</b> Il codice compila correttamente.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a circuito &egrave; indicato
+
+<ul>
+<li><b>A</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente intermittenti (es: dati On-Off)
+</li>
+<li><b>B</b> 		soprattutto quando le sorgenti di traffico sono prevalentemente continue (es: voce o streaming)
+</li>
+<li><b>C</b> 		in qualsiasi circostanza, indipendentemente dal tipo di traffico offerto dalle sorgenti
+</li>
+<li><b>D</b> 		soprattutto quando le sorgenti di traffico emettono a basso ritmo binario
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Il sistema a tempo discreto equivalente ad un dato sistema a tempo continuo
+
+<ul>
+<li><b>A</b> 		si calcola mediante l&rsquo;approssimazione di Eulero della derivata del&rsquo;equazione di stato;
+</li>
+<li><b>B</b> 		riproduce, agli istanti di campionamento, le evoluzioni del sistema a tempo continuo quando l&rsquo;ingresso ha un andamento particolare.
+</li>
+<li><b>C</b> 		&egrave; ottenuto campionando l&rsquo;ingresso e le evoluzioni nello stato e in uscita;
+</li>
+<li><b>D</b> 		riproduce agli istanti di campionamento le evoluzioni del sistema a tempo continuo;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La nozione di &quot;relazione&quot; &egrave; alla base del modello relazionale dei dati. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Una relazione nel modello relazionale &egrave; definita come una relazione matematica, ovvero come un sottoinsieme del prodotto cartesiano di N insiemi di valori, dove N &egrave; il grado della relazione;
+</li>
+<li><b>B</b> 		Una relazione nel modello relazionale &egrave; una tabella che pu&ograve; essere anche infinita;
+</li>
+<li><b>C</b> 		Una relazione nel modello relazionale &egrave; un multiinsieme di tuple.
+</li>
+<li><b>D</b> 		Una relazione nel modello relazionale &egrave; definita come una relaziona matematica, ma con la differenza che le tuple che compongono la relazione (dette tuple) sono ordinate;
+</li>
+</ul>
+</body></html>

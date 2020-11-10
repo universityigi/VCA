@@ -1,0 +1,178 @@
+<!-- 67 -->
+<html><HEAD><TITLE>Test VCA - test numero 67</TITLE><head><body>
+<center><h2>Test VCA - test numero 67</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>B</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>C</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>D</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Quali parti della dichiarazione di un metodo costituiscono la sua &quot;segnatura&quot; ?
+
+<ul>
+<li><b>A</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali ed il tipo del valore restituito
+</li>
+<li><b>B</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali, il tipo del valore restituito e gli eventuali modificatori.
+</li>
+<li><b>C</b> Il nome del metodo ed il tipo, numero ed ordine dei parametri formali.
+</li>
+<li><b>D</b> Il nome del metodo, il tipo dei parametri formali ed il tipo del valore restituito.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+<li><b>B</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+<li><b>D</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		La nozione di &quot;relazione&quot; &egrave; alla base del modello relazionale dei dati. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Una relazione nel modello relazionale &egrave; un multiinsieme di tuple.
+</li>
+<li><b>B</b> 		Una relazione nel modello relazionale &egrave; definita come una relazione matematica, ovvero come un sottoinsieme del prodotto cartesiano di N insiemi di valori, dove N &egrave; il grado della relazione;
+</li>
+<li><b>C</b> 		Una relazione nel modello relazionale &egrave; una tabella che pu&ograve; essere anche infinita;
+</li>
+<li><b>D</b> 		Una relazione nel modello relazionale &egrave; definita come una relaziona matematica, ma con la differenza che le tuple che compongono la relazione (dette tuple) sono ordinate;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Parte del codice eseguibile delle funzioni di un processo &egrave; memorizzato nel segmento:
+
+<ul>
+<li><b>A</b> 		DATA
+</li>
+<li><b>B</b> 		STACK
+</li>
+<li><b>C</b> 		HEAP
+</li>
+<li><b>D</b> 		CODE
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		In un sistema di controllo con reazione dall&#x27;uscita &egrave; possibile assegnare ad arbitrio tutti gli autovalori 
+
+<ul>
+<li><b>A</b> 		se e solo se tutti gli autovalori del processo sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti gli autovalori del processo raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>C</b> 		se e solo se tutti gli autovalori del processo irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+<li><b>D</b> 		se e solo se tutti gli autovalori del processo sono raggiungibili ed osservabili.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente? 
+
+<ul>
+<li><b>A</b> 		In ampiezza
+</li>
+<li><b>B</b> 		In profondit&agrave; con ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		In profondit&agrave; con ordine anticipato (pre-order)
+</li>
+<li><b>D</b> 		In profondit&agrave; con ordine posticipato (post-order)
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Nel trasferimento di una stringa binaria di L bit su un mezzo fisico di lunghezza uguale a D km, l&rsquo;intervallo di tempo che intercorre tra l&rsquo;emissione del primo bit della stringa e la ricezione dell&rsquo;ultimo bit (e cio&egrave; il ritardo di trasferimento della stringa):
+
+<ul>
+<li><b>A</b> 		&egrave; inversamente proporzionale a D
+</li>
+<li><b>B</b> 		dipende in generale da L e da D
+</li>
+<li><b>C</b> 		&egrave; inversamente proporzionale a L
+</li>
+<li><b>D</b> 		dipende solo da D
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero non &egrave; in profondit&agrave;? 
+
+<ul>
+<li><b>A</b> 		In ampiezza
+</li>
+<li><b>B</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		In ordine posticipato (post-order)
+</li>
+<li><b>D</b> 		In ordine anticipato (pre-order)
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo (il cui corpo &egrave; volutamente privo di indentazione):
+<pre>
+public static int f (int a, int b, int c) {
+	if (a>b)
+	if (b>c)
+	return a;
+	else
+	return c;
+	return b;
+}
+</pre>
+Si assuma che il metodo venga invocato con i seguenti paramentri attuali: <tt>f(10, 5, 7)</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;<tt>else</tt> fa riferimento al secondo <tt>if</tt>. Il metodo restituisce quindi <tt>7</tt>.
+</li>
+<li><b>B</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; il compilatore non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+<li><b>C</b> 		Il metodo causa un errore a tempo di esecuzione, perche&#x301; la JVM non sa a quale <tt>if</tt> riferire l&#x27;<tt>else</tt>.
+</li>
+<li><b>D</b> L&#x27;<tt>else</tt> fa riferimento al primo <tt>if</tt>. Il metodo restituisce quindi <tt>5</tt>.
+</li>
+</ul>
+</body></html>

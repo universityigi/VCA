@@ -1,0 +1,183 @@
+<!-- 20 -->
+<html><HEAD><TITLE>Test VCA - test numero 20</TITLE><head><body>
+<center><h2>Test VCA - test numero 20</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni &egrave; vera. Quale? Il tempo di vita di una variabile di istanza coincide con il tempo di vita:
+
+<ul>
+<li><b>A</b> 		della classe a cui appartiene.
+</li>
+<li><b>B</b> 		dell&#x27;oggetto a cui appartiene.
+</li>
+<li><b>C</b> 		del metodo che per primo la accede.
+</li>
+<li><b>D</b> 		del programma in cui viene usata.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; <b>falsa</b>?
+
+<ul>
+<li><b>A</b> 		n + log n &isin; O(log n)
+</li>
+<li><b>B</b> 		log (n<sup>10</sup>) &isin; O(log n)
+</li>
+<li><b>C</b> 		n log n &isin; &Omega;(n)
+</li>
+<li><b>D</b> 		n<sup>2</sup> &isin; O(n<sup>3</sup>)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		L&rsquo;interfaccia tra un Host (terminale) di Internet e la sotto-rete cui &egrave; connesso:
+
+<ul>
+<li><b>A</b> 		pu&ograve; essere individuata dal solo indirizzo IP globale e non richiede un indirizzo locale (es. indirizzo Ethernet)
+</li>
+<li><b>B</b> 		deve essere individuata dall&rsquo; indirizzo IP solo se la sotto-rete comprende un numero elevato di Host
+</li>
+<li><b>C</b> 		pu&ograve; essere individuata dal solo indirizzo locale (es. indirizzo Ethernet) e non richiede un indirizzo IP globale
+</li>
+<li><b>D</b> 		deve essere individuata sia attraverso un indirizzo IP globale, che attraverso un indirizzo locale (es. indirizzo Ethernet)
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		In un sistema dinamico lineare
+
+<ul>
+<li><b>A</b> 		ammette un legame tra u(t) e y(t) del tipo y(t)= K(t) x u(t).
+</li>
+<li><b>B</b> 		le evoluzioni in uscita soddisfano al principio di sovrapposizione degli effetti rispetto all&rsquo;ingresso;
+</li>
+<li><b>C</b> 		la rappresentazione con lo stato &egrave; necessariamente lineare;
+</li>
+<li><b>D</b> 		la risposta si compone di una parte libera ed una forzata;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>C</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Dato il seguente programma:
+<pre>
+import java.util.*; 
+class Test {
+	public static void main (String args[]) {
+		Object a = new HashSet();
+		System.out.print((a instanceof Set)+&quot;,&quot;);
+		System.out.print(a instanceof SortedSet);
+	}
+}
+</pre>
+Qual&#x27;&egrave; il risultato della compilazione ed esecuzione del programma ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Stampa:false,false
+</li>
+<li><b>B</b> 		Stampa:true,true
+</li>
+<li><b>C</b> 		Stampa:true,false
+</li>
+<li><b>D</b> 		Stampa:false,true
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Parte del codice eseguibile delle funzioni di un processo &egrave; memorizzato nel segmento:
+
+<ul>
+<li><b>A</b> 		CODE
+</li>
+<li><b>B</b> 		HEAP
+</li>
+<li><b>C</b> 		DATA
+</li>
+<li><b>D</b> 		STACK
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Sia <tt>R1(A,B,C)</tt> uno schema di relazione. Si consideri la seguente query espressa in SQL:
+<pre>
+SELECT C
+FROM R1 
+WHERE A=B
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usano le due operazioni di proiezione e selezione.
+</li>
+<li><b>B</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di join dell&#x27;algebra relazionale;
+</li>
+<li><b>C</b> 		la query non corrisponde ad alcuna espressione dell&#x27;algebra relazionale;
+</li>
+<li><b>D</b> 		la query corrisponde ad un&#x27;espressione dell&#x27;algebra relazionale in cui si usa la sola operazione di proiezione dell&#x27;algebra relazionale;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Quali parti della dichiarazione di un metodo costituiscono la sua &quot;segnatura&quot; ?
+
+<ul>
+<li><b>A</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali ed il tipo del valore restituito
+</li>
+<li><b>B</b> Il nome del metodo, il tipo, numero ed ordine dei parametri formali, il tipo del valore restituito e gli eventuali modificatori.
+</li>
+<li><b>C</b> Il nome del metodo ed il tipo, numero ed ordine dei parametri formali.
+</li>
+<li><b>D</b> Il nome del metodo, il tipo dei parametri formali ed il tipo del valore restituito.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell&#x27;input)
+
+<ul>
+<li><b>A</b> 		quadratico
+</li>
+<li><b>B</b> 		costante
+</li>
+<li><b>C</b> 		logaritmico
+</li>
+<li><b>D</b> 		lineare
+</li>
+</ul>
+</body></html>

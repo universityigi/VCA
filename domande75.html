@@ -1,0 +1,180 @@
+<!-- 75 -->
+<html><HEAD><TITLE>Test VCA - test numero 75</TITLE><head><body>
+<center><h2>Test VCA - test numero 75</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Si consideri la seguente espressione Java: <tt>a==b</tt>, dove <tt>a</tt> e <tt>b</tt> sono riferimenti ad array di <tt>int</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;espressione vale sempre <tt>false</tt>, indipendentemente dal contenuto di <tt>a</tt> e <tt>b</tt>.
+</li>
+<li><b>B</b> 		L&#x27;espressione &egrave; errata poiche&#x301; l&#x27;operatore <tt>==</tt> non &egrave; applicabile a riferimenti ad array.
+</li>
+<li><b>C</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> sono riferimenti a due array che contengono gli stessi interi nello stesso ordine.
+</li>
+<li><b>D</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> contengono lo stesso indirizzo, cio&egrave; puntano allo stesso array.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Consideriamo la relazione <tt>Persona(nome,citta,eta)</tt>, che memorizza il nome, l&#x27;et&agrave; e la citt&agrave; di residenza delle persone. Per ogni citt&agrave;, si vuole calcolare il numero delle persone maggiorenni (la cui et&agrave; &egrave; maggiore di 18) che vivono in quella citt&agrave;. Una sola delle seguenti affermazioni &egrave;  vera. Quale?
+
+<ul>
+<li><b>A</b> 		Non esiste alcuna query SQL che calcola i dati voluti;
+</li>
+<li><b>B</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+GROUP BY citta
+</pre>
+</li>
+<li><b>C</b> 		La query SQL corretta &egrave;: 
+<pre>
+SELECT citta, count(*)
+FROM Persona
+WHERE eta &gt; 18
+GROUP BY citta
+</pre>
+</li>
+<li><b>D</b> 		La query SQL corretta &egrave;:
+<pre>
+SELECT count(*)
+FROM Persona
+GROUP BY citta, eta
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Le variabili statiche di un processo sono memorizzate nel segmento:
+
+<ul>
+<li><b>A</b> 		DATA
+</li>
+<li><b>B</b> 		STACK
+</li>
+<li><b>C</b> 		CODE
+</li>
+<li><b>D</b> 		HEAP
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una qualsiasi directory.
+</li>
+<li><b>B</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>C</b> La direttiva <tt>package auto.utilita;</tt> deve essere la prima dichiarazione di un file Java contenuto in una directory <tt>auto\utilita</tt>.
+</li>
+<li><b>D</b> La direttiva <tt>package auto.utilita;</tt> pu&ograve; essere presente prima della dichiarazione di una qualsiasi classe in un file Java contenuto in una qualsiasi directory.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Si consideri un&rsquo;architettura di comunicazione protocollare a strati (layered); Le entit&agrave; appartenenti a strati adiacenti (es. strato N e strato N-1):
+
+<ul>
+<li><b>A</b> 		comunicano virtualmente tra loro, attraverso la mediazione delle entit&agrave; di strato inferiore
+</li>
+<li><b>B</b> 		comunicano direttamente tra loro solo nel caso di N=2
+</li>
+<li><b>C</b> 		non hanno esigenze di comunicazione reciproca
+</li>
+<li><b>D</b> 		comunicano direttamente tra loro se appartengono allo stesso sistema
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		L&#x27;assegnazione degli autovalori consente di	
+
+<ul>
+<li><b>A</b> 		progettare un controllore a dimensione minima;
+</li>
+<li><b>B</b> 		effettuare la reiezione completa dei disturbi.
+</li>
+<li><b>C</b> 		ricostruire asintoticamente lo stato del processo;
+</li>
+<li><b>D</b> 		controllare la risposta transitoria;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		La chiusura transitiva di un DAG (grafo diretto aciclico) &egrave; un
+
+<ul>
+<li><b>A</b> 		grafo semplice
+</li>
+<li><b>B</b> 		grafo orientato completo
+</li>
+<li><b>C</b> 		DAG
+</li>
+<li><b>D</b> 		grafo diretto con cicli
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> L&#x27;esecuzione del metodo non termina.
+</li>
+<li><b>B</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+<li><b>C</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>D</b> Il metodo stampa <tt>5</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Una sola delle seguenti istruzioni compila correttamente senza generare errori o messaggi di avviso (warning). Quale ? (Si ricorda che ArrayList e LinkedList implementano l&#x27;interfaccia List e che List a sua volta estende l&#x27;interfaccia Collection)
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		List&lt;Object&gt; x = new Collection&lt;Object&gt;();
+</li>
+<li><b>B</b> 		Collection&lt;Object&gt; x = new ArrayList&lt;String&gt;();
+</li>
+<li><b>C</b> 		List&lt;Object&gt; x = new LinkedList&lt;? extends Object&gt;();
+</li>
+<li><b>D</b> 		Collection&lt;?&gt; x = new ArrayList&lt;String&gt;();
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Qual &egrave; il minimo numero di nodi pozzo (grado di uscita = 0) in un DAG?
+
+<ul>
+<li><b>A</b> 		2
+</li>
+<li><b>B</b> 		3
+</li>
+<li><b>C</b> 		1
+</li>
+<li><b>D</b> 		0
+</li>
+</ul>
+</body></html>

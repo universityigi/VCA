@@ -1,0 +1,217 @@
+<!-- 23 -->
+<html><HEAD><TITLE>Test VCA - test numero 23</TITLE><head><body>
+<center><h2>Test VCA - test numero 23</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+<li><b>B</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>C</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+<li><b>D</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Per quale motivo si digitalizzano i segnali analogici mediante campionamento e quantizzazione?
+
+<ul>
+<li><b>A</b> 		per poterli trasmettere contemporaneamente ad altri segnali
+</li>
+<li><b>B</b> 		solo per poterli trasmettere a velocit&agrave; molto maggiori rispetto a quelle analogiche
+</li>
+<li><b>C</b> 		solo per poterli memorizzare in sistemi digitali (es: in computer)
+</li>
+<li><b>D</b> 		per poterli trasmettere in sistemi digitali con migliori prestazioni e migliore qualit&agrave;
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Si consideri un sistema con una piccola cache completamente associativa contenente 2 sole
+linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di
+programma? 
+<pre>
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+</pre>
+Assumere che l&rsquo;array v sia allineato a un indirizzo multiplo di 16 byte e che la
+cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+
+<ul>
+<li><b>A</b> 		2
+</li>
+<li><b>B</b> 		5
+</li>
+<li><b>C</b> 		8
+</li>
+<li><b>D</b> 		1
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+import java.util.*;
+public class Test {
+	public static void main(String[] args){
+		List&lt;Integer&gt; l = new ArrayList&lt;Integer&gt;();
+		l.add(new Integer(1));
+		l.add(new Integer(2)); 
+		l.add(new Integer(3));
+		... // ISTRUZIONE A QUI
+		while (i.hasNext()) {
+			int q;
+			... // ISTRUZIONE B QUI
+			System.out.println(q*q);
+		}
+	}
+}
+</pre>
+Mettendo al posto delle istruzioni mancanti le seguenti istruzioni A e B, una sola tra queste combinazione &egrave; errata e non produce il risultato di stampare i numeri 1, 4, 9. Quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = i.next();
+
+</li>
+<li><b>B</b> 		A: Iterator&lt;Integer&gt; i = l.iterator(); 
+		B: q = (int)i.next();
+
+</li>
+<li><b>C</b> 		A: Iterator&lt;Object&gt; i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+<li><b>D</b> 		A: Iterator i = l.iterator(); 
+		B: q = (Integer)i.next();
+
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Qual &egrave; il costo di cancellazione di una chiave in un albero di ricerca binario (BST)? 
+
+<ul>
+<li><b>A</b> 		O(1)
+</li>
+<li><b>B</b> 		O(n)
+</li>
+<li><b>C</b> 		O(n log n)
+</li>
+<li><b>D</b> 		O(log n)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>B</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>C</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+<li><b>D</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Quale delle seguenti asserzioni su un grafo semplice &egrave; <b>falsa</b>? (n = num. vertici, m = num. archi)
+
+<ul>
+<li><b>A</b> 		m &isin; O(n<sup>2</sup>)
+</li>
+<li><b>B</b> 		&Egrave; certamente connesso
+</li>
+<li><b>C</b> 		La somma dei gradi dei vertici &egrave; 2m
+</li>
+<li><b>D</b> 		Il grado di un vertice pu&ograve; essere un qualunque numero in {0, 1, 2, &hellip;, n-1}
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Si ricorda che il tipo float &egrave; rappresentato in Java da 32 bit, mentre il tipo double da 64 bit. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il numero di float distinti rappresentabili &egrave; uguale al numero di double distinti rappresentabili, ma le operazioni aritmetiche su questi ultimi sono eseguite con maggiore precisione.
+</li>
+<li><b>B</b> 		Il numero di float distinti rappresentabili &egrave; maggiore del numero di double distinti rappresentabili.
+</li>
+<li><b>C</b> 		Il numero di double distinti rappresentabili &egrave; maggiore del numero di float distinti rappresentabili.
+</li>
+<li><b>D</b> 		Il numero di float distinti rappresentabili &egrave; uguale al numero di double distinti rappresentabili, ma le operazioni aritmetiche su questi ultimi sono eseguite con minore precisione.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>C</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La reificazione di una relazione &egrave; una operazione prevista nella metodologia di progettazione concettuale di basi di dati e consiste nella trasformazione di una relazione in una entit&agrave;.  Una sola delle seguenti affermazioni sulla reificazione di una relazione &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> 		La reificazione di una relazione produce una nuove relazione in ISA con quella originaria;
+</li>
+<li><b>B</b> 		Se la relazione R ha n ruoli, allora la reificazione della relazione R produrr&agrave; una entit&agrave; che parteciper&agrave; ad n relazioni, dove ciascuna partecipazione sar&agrave; caratterizzata dalla cardinalit&agrave; (1,1);
+</li>
+<li><b>C</b> 		Se la relazione R &egrave; in ISA con un&#x27;altra relazione, allora non pu&ograve; essere oggetto di reificazione.  
+</li>
+<li><b>D</b> 		La reificazione di una relazione pu&ograve; essere applicata solo se la relazione non ha attributi;
+</li>
+</ul>
+</body></html>

@@ -1,0 +1,206 @@
+<!-- 21 -->
+<html><HEAD><TITLE>Test VCA - test numero 21</TITLE><head><body>
+<center><h2>Test VCA - test numero 21</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>B</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>C</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>D</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Una memoria cache &egrave; una memoria:
+
+<ul>
+<li><b>A</b> 		Lenta e costosa
+</li>
+<li><b>B</b> 		Veloce e costosa
+</li>
+<li><b>C</b> 		Veloce ed economica
+</li>
+<li><b>D</b> 		Lenta ed economica
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Dato il seguente programma:
+<pre>
+import java.util.*; 
+class Test {
+	public static void main (String args[]) {
+		Object a = new HashSet();
+		System.out.print((a instanceof Set)+&quot;,&quot;);
+		System.out.print(a instanceof SortedSet);
+	}
+}
+</pre>
+Qual&#x27;&egrave; il risultato della compilazione ed esecuzione del programma ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Stampa:false,false
+</li>
+<li><b>B</b> 		Stampa:false,true
+</li>
+<li><b>C</b> 		Stampa:true,true
+</li>
+<li><b>D</b> 		Stampa:true,false
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo Java:
+<pre>
+public static void cosaFa(int[] v, short y) {
+	int i = 0;
+	while (i&lt;v.length) v[++i] = y;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo genera un errore di compilazione perch&egrave; <tt>length</tt> andrebbe scritto <tt>lenght</tt>
+</li>
+<li><b>B</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+<li><b>C</b> 		Il metodo genera una eccezione di tipo <tt>PossibleLossOfPrecision</tt> poich&egrave; non &egrave; possibile assegnare uno <tt>short</tt> a una variabile <tt>int</tt>.
+</li>
+<li><b>D</b> 		Il metodo scrive il valore <tt>y</tt> in tutte le celle dell&#x27;array <tt>v</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; <b>falsa</b>?
+
+<ul>
+<li><b>A</b> 		log (n<sup>10</sup>) &isin; O(log n)
+</li>
+<li><b>B</b> 		n + log n &isin; O(log n)
+</li>
+<li><b>C</b> 		n<sup>2</sup> &isin; O(n<sup>3</sup>)
+</li>
+<li><b>D</b> 		n log n &isin; &Omega;(n)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		In una architettura protocollare a strati di tipo OSI quale strato &egrave; generalmente responsabile di determinare il cammino migliore per instradare un pacchetto dati?
+
+<ul>
+<li><b>A</b> 		lo strato applicativo
+</li>
+<li><b>B</b> 		lo strato di trasporto
+</li>
+<li><b>C</b> 		lo strato di rete
+</li>
+<li><b>D</b> 		lo strato fisico
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Quali di queste affermazioni &egrave; vera per un sistema ad anello chiuso ed &egrave; falsa per un sistema ad anello aperto? 
+
+<ul>
+<li><b>A</b> 		il processo da controllare pu&ograve; avere una o pi&ugrave; ingressi, e una o pi&ugrave; uscite. 
+</li>
+<li><b>B</b> 		l&#x27;uscita del processo da controllare &egrave; misurabile;
+</li>
+<li><b>C</b> 		l&#x27;uscita del controllore costituisce l&#x27;ingresso del processo da controllare;
+</li>
+<li><b>D</b> 		l&#x27;uscita del processo da controllare &egrave; misurabile ed &egrave; utilizzata dal controllore;
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+Si consideri la seguente definizione del metodo <tt>modificaNumeriPari</tt>:
+<pre>
+public static int[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+Quale dei seguenti metodi non sovraccarica (overload) correttamente il metodo generando quindi un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+public static int[] modificaNumeriPari(int[] dati, int num, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>B</b> <pre>
+public int[] modificaNumeriPari(int[] dati, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>C</b> <pre>
+public static void modificaNumeriPari(int[] dati) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>D</b> <pre>
+public double[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul modello Entit&agrave;-Relazione &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un identificatore di una relazione pu&ograve; comprendere sia i ruoli coinvolti in tale relazione sia gli attributi definiti per tale relazione
+</li>
+<li><b>B</b> 		Solo sulle entit&agrave; si possono definire gli identificatori;
+</li>
+<li><b>C</b> 		Un identificatore si pu&ograve; definire su una relazione solo se tale relazione non &egrave; in relazione ISA con un&#x27;altra.
+</li>
+<li><b>D</b> 		Gli identificatori si possono definire sia sulle entit&agrave; sia sugli attributi;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente? 
+
+<ul>
+<li><b>A</b> 		In profondit&agrave; con ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In profondit&agrave; con ordine posticipato (post-order)
+</li>
+<li><b>C</b> 		In profondit&agrave; con ordine simmetrico (in-order)
+</li>
+<li><b>D</b> 		In ampiezza
+</li>
+</ul>
+</body></html>

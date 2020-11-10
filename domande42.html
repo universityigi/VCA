@@ -1,0 +1,189 @@
+<!-- 42 -->
+<html><HEAD><TITLE>Test VCA - test numero 42</TITLE><head><body>
+<center><h2>Test VCA - test numero 42</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul modello Entit&agrave;-Relazione &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un identificatore si pu&ograve; definire su una relazione solo se tale relazione non &egrave; in relazione ISA con un&#x27;altra.
+</li>
+<li><b>B</b> 		Gli identificatori si possono definire sia sulle entit&agrave; sia sugli attributi;
+</li>
+<li><b>C</b> 		Un identificatore di una relazione pu&ograve; comprendere sia i ruoli coinvolti in tale relazione sia gli attributi definiti per tale relazione
+</li>
+<li><b>D</b> 		Solo sulle entit&agrave; si possono definire gli identificatori;
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+		Il minimo numero di foglie di un albero binario di n nodi &egrave;
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		2<sup>n</sup>
+</li>
+<li><b>C</b> 		&#x23A3;log<sub>2</sub> n&#x23A6;
+</li>
+<li><b>D</b> 		n-1
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo per il calcolo del fattoriale
+<pre>
+public static long fattoriale(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * fattoriale(n-1);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Non &egrave; possibile stabilire a priori se il record di attivazione relativo a <tt>fattoriale(3)</tt> venga rimosso dallo stack prima di quello relativo a <tt>fattoriale(2)</tt>, in quanto ci&ograve; dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>B</b> Il record di attivazione relativo a <tt>fattoriale(2)</tt> viene sempre rimosso dallo stack prima del record di attivazione relativo a <tt>fattoriale(3)</tt>.
+</li>
+<li><b>C</b> Il record di attivazione relativo a <tt>fattoriale(3)</tt> pu&ograve; essere rimosso dallo stack prima del record di attivazione relativo a <tt>fattoriale(2)</tt> in casi particolari.
+</li>
+<li><b>D</b> Il record di attivazione relativo a <tt>fattoriale(3)</tt> viene rimosso dallo stack prima del record di attivazione relativo a <tt>fattoriale(2)</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Parte del codice eseguibile delle funzioni di un processo &egrave; memorizzato nel segmento:
+
+<ul>
+<li><b>A</b> 		HEAP
+</li>
+<li><b>B</b> 		STACK
+</li>
+<li><b>C</b> 		CODE
+</li>
+<li><b>D</b> 		DATA
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> L&#x27;esecuzione del metodo non termina.
+</li>
+<li><b>B</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>C</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>D</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice:
+<pre>
+String var1=&quot;var1&quot;;    
+if(var1!=null){
+	String var2=&quot;copia di &quot;+var1;
+}    
+System.out.println(var2);
+</pre>
+Assumendo che le uniche variabili sono quelle nel frammento di codice, una sola delle seguenti affermazioni &egrave; vera. Quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Il programma stampa  var1.
+</li>
+<li><b>B</b> 		Il programma da un errore a tempo di esecuzione.
+</li>
+<li><b>C</b> 		Il programma da un errore a tempo di compilazione
+</li>
+<li><b>D</b> 		Il programma stampa copia di var1.
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		La risposta a regime permanente
+
+<ul>
+<li><b>A</b> 		&egrave; calcolata facendo il limite per t che tende all&rsquo;infinito;
+</li>
+<li><b>B</b> 		dipende dallo stato iniziale;
+</li>
+<li><b>C</b> 		esiste sempre ed &egrave; indipendente dallo stato iniziale.
+</li>
+<li><b>D</b> 		corrisponde necessariamente ad un ingresso persistente;
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Nell&rsquo; indirizzamento in Internet la maschera di sotto-rete:
+
+<ul>
+<li><b>A</b> 		distingue tra indirizzi in forma binaria e in rappresentazione mediante nomi (es: www.uniroma1.it)
+</li>
+<li><b>B</b> 		serve a rendere noto ad ogni sistema in che modo il l&rsquo;indirizzo IP &egrave; suddiviso in modo gerarchico tra parte Net-ID e parte Host-ID
+</li>
+<li><b>C</b> 		distingue tra indirizzi in forma binaria e in rappresentazione decimale
+</li>
+<li><b>D</b> 		distingue tra indirizzi in forma decimale e in rappresentazione mediante nomi (es: www.uniroma1.it)
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo:
+<pre>
+public static void stampa()	{
+	for (int i=1; i<10; i=i+i) {
+		if (i==5) break;
+		System.out.print (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo causa un errore a tempo di compilazione, perche&#x301; non &egrave; possibile dichiarare una variabile nell&#x27;intestazione di un&#x27;istruzione <tt>for</tt>.
+</li>
+<li><b>B</b> 		Il metodo stampa <tt>124</tt>
+</li>
+<li><b>C</b> 		Il metodo stampa <tt>123456789</tt>
+</li>
+<li><b>D</b> 		L&#x27;istruzione <tt>break</tt> all&#x27;interno del metodo <tt>stampa()</tt> non viene mai eseguita.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Quale delle seguenti proposizioni &egrave; <b>falsa</b>?
+
+<ul>
+<li><b>A</b> 		n + log n &isin; O(log n)
+</li>
+<li><b>B</b> 		n log n &isin; &Omega;(n)
+</li>
+<li><b>C</b> 		n<sup>2</sup> &isin; O(n<sup>3</sup>)
+</li>
+<li><b>D</b> 		log (n<sup>10</sup>) &isin; O(log n)
+</li>
+</ul>
+</body></html>

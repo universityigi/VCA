@@ -1,0 +1,199 @@
+<!-- 88 -->
+<html><HEAD><TITLE>Test VCA - test numero 88</TITLE><head><body>
+<center><h2>Test VCA - test numero 88</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Una sola delle seguenti istruzioni compila correttamente senza generare errori o messaggi di avviso (warning). Quale ? (Si ricorda che ArrayList e LinkedList implementano l&#x27;interfaccia List e che List a sua volta estende l&#x27;interfaccia Collection)
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		List&lt;Object&gt; x = new LinkedList&lt;? extends Object&gt;();
+</li>
+<li><b>B</b> 		List&lt;Object&gt; x = new Collection&lt;Object&gt;();
+</li>
+<li><b>C</b> 		Collection&lt;?&gt; x = new ArrayList&lt;String&gt;();
+</li>
+<li><b>D</b> 		Collection&lt;Object&gt; x = new ArrayList&lt;String&gt;();
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		La nozione di &quot;ruolo&quot; &egrave; una delle nozioni fondamentali del modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Un ruolo identifica una partecipazione di una entit&agrave; ad una relazione;
+</li>
+<li><b>B</b> 		&quot;Ruolo&quot; &egrave; sinonimo di relazione;
+</li>
+<li><b>C</b> 		Un ruolo identifica una partecipazione di una entit&agrave; alla relazione ISA.
+</li>
+<li><b>D</b> 		&quot;Ruolo&quot; &egrave; sinonimo di attributo;
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaInit</tt>, riportata di seguito:
+<pre>
+public class ProvaInit {
+	private int x, y;
+	public int somma () {return x+y; }
+	public static void main (String[] args) {
+		ProvaInit p=new ProvaInit ();
+		p.x=10;
+		System.out.println (p.somma ());
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		La classe causa un errore a tempo di compilazione, perche&#x301; la variabile <tt>y</tt> non &egrave; inizializzata.
+</li>
+<li><b>B</b> 		La classe causa un errore a tempo di esecuzione, perche&#x301; la variabile <tt>y</tt> non &egrave; inizializzata.
+</li>
+<li><b>C</b> 		La classe compila correttamente. L&#x27;esecuzione del metodo <tt>main</tt> stampa <tt>10</tt>, perche&#x301; la variabile di istanza <tt>y</tt> viene automaticamente inizializzata a <tt>0</tt>.
+</li>
+<li><b>D</b> 		La classe causa un errore a tempo di compilazione, perche&#x301; la variabile <tt>x</tt> &egrave; privata e non vi si pu&ograve; accedere dal metodo <tt>main</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Quale tipologia di visita in profondit&agrave; di un albero risulta asintoticamente pi&ugrave; rapida? 
+
+<ul>
+<li><b>A</b> 		In ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		In ordine posticipato (post-order)
+</li>
+<li><b>D</b> 		Tutte a pari merito 
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Un processo &egrave; in stato ready se:
+
+<ul>
+<li><b>A</b> 		E&rsquo; correntemente in esecuzione su uno dei core disponibili nel sistema
+</li>
+<li><b>B</b> 		E&rsquo; terminato e le risorse che detiene (es. memoria) stanno per essere rilasciate per poter essere riutilizzate da altri processi
+</li>
+<li><b>C</b> 		E&rsquo; in attesa di un evento asincrono come la terminazione di un&rsquo;operazione di lettura da un dispositivo esterno
+</li>
+<li><b>D</b> 		E&rsquo; nelle condizioni di essere eseguito, ma non lo &egrave; perch&eacute; tutti i core delle CPU disponibili nel sistema sono impegnati nell&rsquo;esecuzione di altri processi
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero non &egrave; in profondit&agrave;? 
+
+<ul>
+<li><b>A</b> 		In ordine posticipato (post-order)
+</li>
+<li><b>B</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		In ordine anticipato (pre-order)
+</li>
+<li><b>D</b> 		In ampiezza
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+Si consideri la seguente definizione del metodo <tt>modificaNumeriPari</tt>:
+<pre>
+public static int[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+Quale dei seguenti metodi non sovraccarica (overload) correttamente il metodo generando quindi un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+public static int[] modificaNumeriPari(int[] dati, int num, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>B</b> <pre>
+public double[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>C</b> <pre>
+public int[] modificaNumeriPari(int[] dati, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>D</b> <pre>
+public static void modificaNumeriPari(int[] dati) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		In un sistema di controllo con reazione dall&#x27;uscita &egrave; possibile assegnare ad arbitrio tutti gli autovalori 
+
+<ul>
+<li><b>A</b> 		se e solo se tutti gli autovalori del processo raggiungibili ed osservabili sono a parte reale negativa;
+</li>
+<li><b>B</b> 		se e solo se tutti gli autovalori del processo sono raggiungibili ed osservabili.
+</li>
+<li><b>C</b> 		se e solo se tutti gli autovalori del processo sono a parte reale negativa;
+</li>
+<li><b>D</b> 		se e solo se tutti gli autovalori del processo irraggiungibili e/o inosservabili sono a parte reale negativa;
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Si consideri un&rsquo;architettura di comunicazione protocollare a strati (layered); Le entit&agrave; appartenenti a strati adiacenti (es. strato N e strato N-1):
+
+<ul>
+<li><b>A</b> 		non hanno esigenze di comunicazione reciproca
+</li>
+<li><b>B</b> 		comunicano direttamente tra loro se appartengono allo stesso sistema
+</li>
+<li><b>C</b> 		comunicano virtualmente tra loro, attraverso la mediazione delle entit&agrave; di strato inferiore
+</li>
+<li><b>D</b> 		comunicano direttamente tra loro solo nel caso di N=2
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+Si consideri la classe <tt>ProvaSwitch</tt>, riportata di seguito:
+<pre>
+public class ProvaSwitch {
+	public static void conv(int x) {
+		switch (x) {
+			case 0:
+				System.out.print ("Zero");
+			case 1:
+				System.out.print ("Uno");
+				break;
+			default:
+				System.out.println ("Errore");
+		} 
+	}
+	public static void main (String[] x) {
+		for (int i=0; i<=2; i++)
+			conv (i);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoDue</tt>
+</li>
+<li><b>B</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoErrore</tt>
+</li>
+<li><b>C</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUno</tt>
+</li>
+<li><b>D</b> 		L'esecuzione del metodo <tt>main</tt> causa la stampa di <tt>ZeroUnoUnoErrore</tt>
+</li>
+</ul>
+</body></html>

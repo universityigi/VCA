@@ -1,0 +1,185 @@
+<!-- 33 -->
+<html><HEAD><TITLE>Test VCA - test numero 33</TITLE><head><body>
+<center><h2>Test VCA - test numero 33</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Un processo &egrave; in stato ready se:
+
+<ul>
+<li><b>A</b> 		E&rsquo; nelle condizioni di essere eseguito, ma non lo &egrave; perch&eacute; tutti i core delle CPU disponibili nel sistema sono impegnati nell&rsquo;esecuzione di altri processi
+</li>
+<li><b>B</b> 		E&rsquo; in attesa di un evento asincrono come la terminazione di un&rsquo;operazione di lettura da un dispositivo esterno
+</li>
+<li><b>C</b> 		E&rsquo; terminato e le risorse che detiene (es. memoria) stanno per essere rilasciate per poter essere riutilizzate da altri processi
+</li>
+<li><b>D</b> 		E&rsquo; correntemente in esecuzione su uno dei core disponibili nel sistema
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+<li><b>B</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>C</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>D</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul modello Entit&agrave;-Relazione &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		La relazione ISA si pu&ograve; definire sulle entit&agrave;, ma non sulle relazioni;
+</li>
+<li><b>B</b> 		La relazione ISA tra relazioni non &egrave; transitiva;
+</li>
+<li><b>C</b> 		La relazione ISA si pu&ograve; definire tra due relazioni, ma solo se tali relazioni hanno gli stessi attributi.
+</li>
+<li><b>D</b> 		La relazione ISA si pu&ograve; definire tra due relazioni, ma solo se tali relazioni hanno gli stessi ruoli;
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Il massimo numero di nodi di un albero binario di altezza h &egrave;
+
+<ul>
+<li><b>A</b> 		2<sup>h+1</sup>-1
+</li>
+<li><b>B</b> 		&#x23A3;log<sub>2</sub> h&#x23A6;
+</li>
+<li><b>C</b> 		2<sup>h</sup>
+</li>
+<li><b>D</b> 		2h
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Qual &egrave; il costo di cancellazione di una chiave in un albero di ricerca binario (BST)? 
+
+<ul>
+<li><b>A</b> 		O(log n)
+</li>
+<li><b>B</b> 		O(1)
+</li>
+<li><b>C</b> 		O(n log n)
+</li>
+<li><b>D</b> 		O(n)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma Java
+<pre>
+class Nodo {
+	public Nodo next;
+	public Object elem;
+	public Nodo(Object e, Nodo n) {
+		elem=e; next=n;
+	}
+	public String toString() {
+		if (next==null) return elem.toString();
+		else return elem+" "+this.next;
+	} 
+}
+public class Test {
+	public static void main(String[] args) {
+		Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+		System.out.println(init);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> Il programma &egrave; eseguito correttamente e stampa <tt>A null</tt>
+</li>
+<li><b>B</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B C</tt>
+</li>
+<li><b>C</b> Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>D</b> Il programma &egrave; eseguito correttamente e stampa <tt>A B</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		L&rsquo;elemento chiave per evitare il reiterarsi di collisioni in un accesso multiplo (MAC) casuale &egrave;:
+
+<ul>
+<li><b>A</b> 		la casualizzazione della durata dell&rsquo;intervallo di tempo di attesa prima di tentare la nuova emissione (noto come back-off)
+</li>
+<li><b>B</b> 		l&rsquo;aggiunta di un campo di rivelazione di errore nelle Unit&agrave; Dati MAC
+</li>
+<li><b>C</b> 		la possibilit&agrave; di ascoltare il mezzo multiaccesso per verificare la presenza di trasmissioni in corso prima di iniziare una nuova trasmissione
+</li>
+<li><b>D</b> 		effettuare un controllo centralizzato delle collisioni 
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Si consideri la seguente espressione Java: <tt>a==b</tt>, dove <tt>a</tt> e <tt>b</tt> sono riferimenti ad array di <tt>int</tt>. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> sono riferimenti a due array che contengono gli stessi interi nello stesso ordine.
+</li>
+<li><b>B</b> 		L&#x27;espressione vale <tt>true</tt> se <tt>a</tt> e <tt>b</tt> contengono lo stesso indirizzo, cio&egrave; puntano allo stesso array.
+</li>
+<li><b>C</b> 		L&#x27;espressione &egrave; errata poiche&#x301; l&#x27;operatore <tt>==</tt> non &egrave; applicabile a riferimenti ad array.
+</li>
+<li><b>D</b> 		L&#x27;espressione vale sempre <tt>false</tt>, indipendentemente dal contenuto di <tt>a</tt> e <tt>b</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo per il calcolo del fattoriale
+<pre>
+public static long fattoriale(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * fattoriale(n-1);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il record di attivazione relativo a <tt>fattoriale(3)</tt> pu&ograve; essere rimosso dallo stack prima del record di attivazione relativo a <tt>fattoriale(2)</tt> in casi particolari.
+</li>
+<li><b>B</b> Non &egrave; possibile stabilire a priori se il record di attivazione relativo a <tt>fattoriale(3)</tt> venga rimosso dallo stack prima di quello relativo a <tt>fattoriale(2)</tt>, in quanto ci&ograve; dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>C</b> Il record di attivazione relativo a <tt>fattoriale(3)</tt> viene rimosso dallo stack prima del record di attivazione relativo a <tt>fattoriale(2)</tt>.
+</li>
+<li><b>D</b> Il record di attivazione relativo a <tt>fattoriale(2)</tt> viene sempre rimosso dallo stack prima del record di attivazione relativo a <tt>fattoriale(3)</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Dato il seguente programma:
+<pre>
+import java.util.*; 
+class Test {
+	public static void main (String args[]) {
+		Object a = new HashSet();
+		System.out.print((a instanceof Set)+&quot;,&quot;);
+		System.out.print(a instanceof SortedSet);
+	}
+}
+</pre>
+Qual&#x27;&egrave; il risultato della compilazione ed esecuzione del programma ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Stampa:true,true
+</li>
+<li><b>B</b> 		Stampa:false,true
+</li>
+<li><b>C</b> 		Stampa:false,false
+</li>
+<li><b>D</b> 		Stampa:true,false
+</li>
+</ul>
+</body></html>

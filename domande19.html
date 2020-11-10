@@ -1,0 +1,203 @@
+<!-- 19 -->
+<html><HEAD><TITLE>Test VCA - test numero 19</TITLE><head><body>
+<center><h2>Test VCA - test numero 19</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Quale tipologia di visita di un albero non &egrave; in profondit&agrave;? 
+
+<ul>
+<li><b>A</b> 		In ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		In ordine posticipato (post-order)
+</li>
+<li><b>D</b> 		In ampiezza
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>C</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		In una architettura protocollare a strati di tipo OSI quale strato &egrave; generalmente responsabile di determinare il cammino migliore per instradare un pacchetto dati?
+
+<ul>
+<li><b>A</b> 		lo strato di trasporto
+</li>
+<li><b>B</b> 		lo strato di rete
+</li>
+<li><b>C</b> 		lo strato fisico
+</li>
+<li><b>D</b> 		lo strato applicativo
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>B</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+<li><b>C</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>D</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo Java:
+<pre>
+public static void cosaFa(int[] v, short y) {
+	int i = 0;
+	while (i&lt;v.length) v[++i] = y;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo genera un errore di compilazione perch&egrave; <tt>length</tt> andrebbe scritto <tt>lenght</tt>
+</li>
+<li><b>B</b> 		Il metodo genera una eccezione di tipo <tt>PossibleLossOfPrecision</tt> poich&egrave; non &egrave; possibile assegnare uno <tt>short</tt> a una variabile <tt>int</tt>.
+</li>
+<li><b>C</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+<li><b>D</b> 		Il metodo scrive il valore <tt>y</tt> in tutte le celle dell&#x27;array <tt>v</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		La nozione di &quot;ruolo&quot; &egrave; una delle nozioni fondamentali del modello Entit&agrave;-Relazione. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		&quot;Ruolo&quot; &egrave; sinonimo di relazione;
+</li>
+<li><b>B</b> 		Un ruolo identifica una partecipazione di una entit&agrave; ad una relazione;
+</li>
+<li><b>C</b> 		Un ruolo identifica una partecipazione di una entit&agrave; alla relazione ISA.
+</li>
+<li><b>D</b> 		&quot;Ruolo&quot; &egrave; sinonimo di attributo;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		In un albero binario completo di n nodi l&#x27;altezza &egrave;
+
+<ul>
+<li><b>A</b> 		&#x3F4;(n)
+</li>
+<li><b>B</b> 		&#x3F4;(log n)
+</li>
+<li><b>C</b> 		&#x3F4;(1)
+</li>
+<li><b>D</b> 		&#x3F4;(n log n)
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		0,4
+</li>
+<li><b>B</b> 		0,3,4
+</li>
+<li><b>C</b> 		2,6,6
+</li>
+<li><b>D</b> 		3,4,5
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+Si consideri la seguente espressione booleana:
+<tt>!(a || b) && b</tt>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> l&#x27;espressione restituisce true solo quando b==true e a==false.
+</li>
+<li><b>B</b> l&#x27;espressione restituisce sempre true.
+</li>
+<li><b>C</b> l&#x27;espressione restituisce sempre false.
+</li>
+<li><b>D</b> l&#x27;espressione restituisce true solo quando b==true.
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Le stringhe che appaiono in un programma C (es. &ldquo;hello world&rdquo;) sono memorizzate nel segmento:
+
+<ul>
+<li><b>A</b> 		HEAP
+</li>
+<li><b>B</b> 		CODE
+</li>
+<li><b>C</b> 		DATA
+</li>
+<li><b>D</b> 		STACK
+</li>
+</ul>
+</body></html>

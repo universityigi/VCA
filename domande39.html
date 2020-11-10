@@ -1,0 +1,184 @@
+<!-- 39 -->
+<html><HEAD><TITLE>Test VCA - test numero 39</TITLE><head><body>
+<center><h2>Test VCA - test numero 39</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Il segmento TEXT/CODE di un processo mantiene:
+
+<ul>
+<li><b>A</b> 		Il codice eseguibile su cui &egrave; basato il processo
+</li>
+<li><b>B</b> 		I blocchi allocati dinamicamente dal programma
+</li>
+<li><b>C</b> 		Le variabili con durata statica (es. variabili globali) di un programma
+</li>
+<li><b>D</b> 		Le stringhe contenute nel testo del programma
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+<li><b>B</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+<li><b>D</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di codice:
+<pre>
+public static void  main(String[] args) {
+	String[] array=new String[10];
+	int i=0;
+	while(i<10){
+		if(i%2==0){
+			array[i]="ok";
+			continue;
+		}
+		i++;
+	}
+	int cont=0;
+	for(i=0;i<10;i++)
+		if(array[i].equals("ok"))
+			cont++;
+	System.out.println(cont);
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> Il metodo genera una eccezione di tipo <tt>NullPointerException</tt>.
+</li>
+<li><b>B</b> Il metodo stampa <tt>4</tt>.
+</li>
+<li><b>C</b> Il metodo stampa <tt>5</tt>.
+</li>
+<li><b>D</b> L&#x27;esecuzione del metodo non termina.
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+Si consideri il seguente metodo per il calcolo del fattoriale
+<pre>
+public static long fattoriale(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * fattoriale(n-1);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il numero di record di attivazione presenti nello stack quando il metodo viene invocato con valore <tt>0</tt> del parametro &egrave; <tt>n+1</tt>.
+</li>
+<li><b>B</b> Non &egrave; possibile stabilire a priori il numero massimo di record di attivazione che saranno presenti nello stack in seguito all&#x27;invocazione del metodo.
+</li>
+<li><b>C</b> Lo Stack della Java Virtual Machine contiene, ad ogni istante, soltanto un record di attivazione relativo al metodo.
+</li>
+<li><b>D</b> Il numero massimo di record di attivazione presenti nello stack a seguito dell&#x27;invocazione del metodo non dipende da <tt>n</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		L&rsquo;elemento chiave per evitare il reiterarsi di collisioni in un accesso multiplo (MAC) casuale &egrave;:
+
+<ul>
+<li><b>A</b> 		l&rsquo;aggiunta di un campo di rivelazione di errore nelle Unit&agrave; Dati MAC
+</li>
+<li><b>B</b> 		effettuare un controllo centralizzato delle collisioni 
+</li>
+<li><b>C</b> 		la possibilit&agrave; di ascoltare il mezzo multiaccesso per verificare la presenza di trasmissioni in corso prima di iniziare una nuova trasmissione
+</li>
+<li><b>D</b> 		la casualizzazione della durata dell&rsquo;intervallo di tempo di attesa prima di tentare la nuova emissione (noto come back-off)
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul modello Entit&agrave;-Relazione &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Gli identificatori si possono definire sia sulle entit&agrave; sia sugli attributi;
+</li>
+<li><b>B</b> 		Un identificatore di una relazione pu&ograve; comprendere sia i ruoli coinvolti in tale relazione sia gli attributi definiti per tale relazione
+</li>
+<li><b>C</b> 		Un identificatore si pu&ograve; definire su una relazione solo se tale relazione non &egrave; in relazione ISA con un&#x27;altra.
+</li>
+<li><b>D</b> 		Solo sulle entit&agrave; si possono definire gli identificatori;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		La stabilit&agrave; interna di un sistema lineare
+
+<ul>
+<li><b>A</b> 		&egrave; una propriet&agrave; delle evoluzioni libere nello stato;
+</li>
+<li><b>B</b> 		riguarda la limitatezza delle uscite rispetto all&rsquo;ingresso;
+</li>
+<li><b>C</b> 		dipende dal segno della parte reale dei poli della funzione di trasferimento;
+</li>
+<li><b>D</b> 		&egrave; assicurata dalla raggiungibilit&agrave; e osservabilit&agrave; del sistema.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni &egrave; vera. Quale? Il tempo di vita di una variabile statica coincide con il tempo di vita:
+
+<ul>
+<li><b>A</b> 		dell&#x27;oggetto a cui appartiene.
+</li>
+<li><b>B</b> 		della classe a cui appartiene.
+</li>
+<li><b>C</b> 		del metodo che per primo la accede.
+</li>
+<li><b>D</b> 		del metodo che la accede pi&ugrave; frequentemente.
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+		A quale fra le seguenti categorie appartiene un grafo con n &gt; 1 nodi e m = 0 archi?
+
+<ul>
+<li><b>A</b> 		Grafo connesso
+</li>
+<li><b>B</b> 		DAG
+</li>
+<li><b>C</b> 		Grafo fortemente connesso
+</li>
+<li><b>D</b> 		Grafo completo
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		La funzione n! &egrave;
+
+<ul>
+<li><b>A</b> 		O(2<sup>n</sup>)
+</li>
+<li><b>B</b> 		O(n<sup>2</sup>)
+</li>
+<li><b>C</b> 		O(n<sup>n</sup>)
+</li>
+<li><b>D</b> 		O(log<sub>2</sub> n)
+</li>
+</ul>
+</body></html>

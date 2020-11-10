@@ -1,0 +1,202 @@
+<!-- 7 -->
+<html><HEAD><TITLE>Test VCA - test numero 7</TITLE><head><body>
+<center><h2>Test VCA - test numero 7</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+		Si consideri il seguente frammento di codice Java:
+<pre>
+public interface I {
+	public void f();
+}
+public interface J {
+	public void g();
+}
+public class C implements I,J {
+	public void f() { }
+	public void g() { }
+}
+</pre>
+Sia p una variabile di tipo I che contiene l&#x27;indirizzo di un oggetto di tipo C e q una variabile di tipo J. Una sola delle seguenti affermazioni &egrave; corretta: quale?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		Il frammento di codice contiene errori sintattici.
+</li>
+<li><b>B</b> 		L&#x27;istruzione q = p; genera un errore di esecuzione.	
+</li>
+<li><b>C</b> 		L&#x27;istruzione q = p; &egrave; corretta.
+</li>
+<li><b>D</b> 		L&#x27;istruzione q = p; genera un errore di compilazione.
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+Si considerino le classi <tt>Solido</tt> e <tt>Cubo</tt> riportate di seguito: 
+<pre>
+public class Solido {
+	public double volume;
+	public Solido (double volume) {
+		this.volume=volume;
+	}
+}
+public class Cubo extends Solido {
+	public double lato;
+	public Cubo (double lato) {
+		super ();
+		this.lato=lato;
+		this.volume=this.lato*this.lato*this.lato;
+	}
+	public static void main (String[] args) {
+		Cubo c=new Cubo (2.0);
+		System.out.println (c.volume);
+	}
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; corretta. Quale?
+
+<ul>
+<li><b>A</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; il suo costruttore invoca il costruttore senza argomenti della classe <tt>Solido</tt>, che per&ograve; non &egrave; definito.
+</li>
+<li><b>B</b> Il metodo <tt>main</tt> della classe <tt>Cubo</tt> stampa <tt>8.0</tt>.
+</li>
+<li><b>C</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal suo costruttore non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+<li><b>D</b> La classe <tt>Cubo</tt> causa un errore a tempo di compilazione, perche&#x301; dal metodo <tt>main</tt> non &egrave; possibile accedere alla variabile di istanza <tt>volume</tt> della classe <tt>Solido</tt>.
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Quale categoria di grafi semplici (non orientati e privi di self-loop) non ammette una foresta ricoprente?
+
+<ul>
+<li><b>A</b> 		Grafi aciclici
+</li>
+<li><b>B</b> 		Grafi non connessi
+</li>
+<li><b>C</b> 		Grafi connessi
+</li>
+<li><b>D</b> 		Nessuna
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente frammento di programma:
+<pre>
+public class ClasseConErrore {
+	public int k;
+	public ClasseConErrore(int x) {
+		k=x;
+	}
+	public ClasseConErrore(int x, int y) {
+		k=x*y;
+	}
+	public void stampa() {
+		System.out.println(k);
+	}
+	public static void main(String[] args) {
+		int k=12;
+		ClasseConErrore a = new ClasseConErrore();
+		ClasseConErrore b = new ClasseConErrore(k);
+		ClasseConErrore c = new ClasseConErrore(k,10);
+		a.stampa();
+		b.stampa();
+		c.stampa();
+	}
+}
+</pre>
+Il programma contiene un errore che ne impedisce la compilazione. Quale ?
+
+<ul>
+<li><b>A</b> Il metodo <tt>main</tt> non pu&ograve; istanziare oggetti della stessa classe in cui &egrave; definito.
+</li>
+<li><b>B</b> La funzione <tt>main</tt> tenta di istanziare un oggetto della classe <tt>ClasseConErrore</tt> usando un costruttore senza argomenti non definito.
+</li>
+<li><b>C</b> La funzione <tt>main</tt> tenta di accedere alla variabile di istanza <tt>k</tt> senza fare riferimento ad oggetti della classe <tt>ClasseConErrore</tt>.
+</li>
+<li><b>D</b> La funzione <tt>main</tt> sovrascrive la variabile d&#x27;istanza <tt>k</tt> con una versione locale rendendo cos&igrave; impossibile ai costruttori l&#x27;inizializzazione del suo valore.
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+		Quanti cache miss pu&ograve; generare nel caso peggiore la scansione lineare di una lista collegata di n elementi assumendo una cache completamente associativa in cui ogni linea pu&ograve; contenere k nodi dell&rsquo;array?
+
+<ul>
+<li><b>A</b> 		1
+</li>
+<li><b>B</b> 		n
+</li>
+<li><b>C</b> 		n/k
+</li>
+<li><b>D</b> 		k
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		In generale, per progettare un sistema di controllo che permetta la reiezione completa del disturbo &egrave; necessario che:
+
+<ul>
+<li><b>A</b> 		il controllore sia a dimensione minima;
+</li>
+<li><b>B</b> 		il disturbo sia misurabile;
+</li>
+<li><b>C</b> 		il disturbo sia illimitato.
+</li>
+<li><b>D</b> 		il disturbo sia limitato;
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		Una sola delle seguenti affermazioni sul passaggio dei parametri in Java &egrave; vera. Quale? Al momento dell&#x27;invocazione di un metodo:
+
+<ul>
+<li><b>A</b> 		i parametri attuali dell&#x27;invocazione vengono copiati nei corrispondenti parametri formali dell&#x27;intestazione del metodo.
+</li>
+<li><b>B</b> 		in assenza di overloading, i parametri passati non devono eccedere i parametri dell&#x27;intestazione del metodo, ma possono anche essere di pi&ugrave;.
+</li>
+<li><b>C</b> 		in assenza di overloading, i parametri passati non devono eccedere i parametri dell&#x27;intestazione del metodo, ma possono anche essere di meno.
+</li>
+<li><b>D</b> 		i parametri formali dell&#x27;invocazione vengono copiati nei corrispondenti parametri attuali dell&#x27;intestazione del metodo.
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+	<domanda>
+		Quale &egrave; la funzione principale che deve svolgere un router di una rete Internet
+
+<ul>
+<li><b>A</b> 		assegnare indirizzi IP ai terminali della rete Internet (Host)
+</li>
+<li><b>B</b> 		effettuare l&rsquo;istradamento dei pacchetti IP in rete
+</li>
+<li><b>C</b> 		permettere la conversione di indirizzi IP mnemonici in numerici (es: www.uniroma1.it in 151.100.27.3)
+</li>
+<li><b>D</b> 		effettuare l&rsquo;indirizzamento dei pacchetti IP
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		La chiusura transitiva di un DAG (grafo diretto aciclico) &egrave; un
+
+<ul>
+<li><b>A</b> 		DAG
+</li>
+<li><b>B</b> 		grafo orientato completo
+</li>
+<li><b>C</b> 		grafo semplice
+</li>
+<li><b>D</b> 		grafo diretto con cicli
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+		Nell&#x27;ambito del modello relazionale dei dati il join naturale &egrave;
+
+<ul>
+<li><b>A</b> 		un operatore che si applica a due relazioni e che calcola l&#x27;unione delle tuple di tali relazioni;
+</li>
+<li><b>B</b> 		un operatore che si applica a due relazioni e che combina le tuple delle due relazioni sulla base della uguaglianza degli attributi in comune alle due relazioni;
+</li>
+<li><b>C</b> 		un operatore che calcola uno schema di relazione unendo gli attributi di una relazione con quelli di un&#x27;altra relazione
+</li>
+<li><b>D</b> 		un metodo per progettare in modo corretto lo schema di una relazione;
+</li>
+</ul>
+</body></html>

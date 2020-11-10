@@ -1,0 +1,210 @@
+<!-- 73 -->
+<html><HEAD><TITLE>Test VCA - test numero 73</TITLE><head><body>
+<center><h2>Test VCA - test numero 73</h2></center><hr>
+<center><h3><b>Domanda 1</b></h3></center>
+	<domanda>
+Si consideri la seguente definizione del metodo <tt>modificaNumeriPari</tt>:
+<pre>
+public static int[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+Quale dei seguenti metodi non sovraccarica (overload) correttamente il metodo generando quindi un errore in fase di compilazione ?
+
+<ul>
+<li><b>A</b> <pre>
+public static int[] modificaNumeriPari(int[] dati, int num, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>B</b> <pre>
+public double[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>C</b> <pre>
+public static void modificaNumeriPari(int[] dati) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+<li><b>D</b> <pre>
+public int[] modificaNumeriPari(int[] dati, double[] delta) {
+	//Altro codice qui...
+}
+</pre>
+</li>
+</ul>
+<center><h3><b>Domanda 2</b></h3></center>
+	<domanda>
+		Nell&rsquo; indirizzamento in Internet la maschera di sotto-rete:
+
+<ul>
+<li><b>A</b> 		distingue tra indirizzi in forma binaria e in rappresentazione decimale
+</li>
+<li><b>B</b> 		distingue tra indirizzi in forma decimale e in rappresentazione mediante nomi (es: www.uniroma1.it)
+</li>
+<li><b>C</b> 		serve a rendere noto ad ogni sistema in che modo il l&rsquo;indirizzo IP &egrave; suddiviso in modo gerarchico tra parte Net-ID e parte Host-ID
+</li>
+<li><b>D</b> 		distingue tra indirizzi in forma binaria e in rappresentazione mediante nomi (es: www.uniroma1.it)
+</li>
+</ul>
+<center><h3><b>Domanda 3</b></h3></center>
+	<domanda>
+		Quale tipologia di visita in profondit&agrave; di un albero risulta asintoticamente pi&ugrave; rapida? 
+
+<ul>
+<li><b>A</b> 		In ordine anticipato (pre-order)
+</li>
+<li><b>B</b> 		In ordine simmetrico (in-order)
+</li>
+<li><b>C</b> 		Tutte a pari merito 
+</li>
+<li><b>D</b> 		In ordine posticipato (post-order)
+</li>
+</ul>
+<center><h3><b>Domanda 4</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo Java:
+<pre>
+public static void cosaFa(int[] v, short y) {
+	int i = 0;
+	while (i&lt;v.length) v[++i] = y;
+}
+</pre>
+Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Il metodo scrive il valore <tt>y</tt> in tutte le celle dell&#x27;array <tt>v</tt>.
+</li>
+<li><b>B</b> 		Il metodo genera una eccezione di tipo <tt>PossibleLossOfPrecision</tt> poich&egrave; non &egrave; possibile assegnare uno <tt>short</tt> a una variabile <tt>int</tt>.
+</li>
+<li><b>C</b> 		Il metodo genera una eccezione di tipo <tt>ArrayIndexOutOfBoundsException</tt>.
+</li>
+<li><b>D</b> 		Il metodo genera un errore di compilazione perch&egrave; <tt>length</tt> andrebbe scritto <tt>lenght</tt>
+</li>
+</ul>
+<center><h3><b>Domanda 5</b></h3></center>
+	<domanda>
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro <tt>n > 0</tt>:
+<pre>
+public static long myfatt(long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * myfatt(n);
+}
+</pre>
+Solo una delle seguenti affermazioni &egrave; vera. Dire quale.
+
+<ul>
+<li><b>A</b> Il metodo viene invocato ricorsivamente <tt>11</tt> volte.
+</li>
+<li><b>B</b> Il metodo non &egrave; ricorsivo, in quanto tutte le invocazioni avvengono con lo stesso valore del parametro di ingresso.
+</li>
+<li><b>C</b> Non &egrave; possibile stabilire a priori se il metodo determini un&#x27;eccezione o meno, in quanto tale evento dipende dal valore di <tt>n</tt>.
+</li>
+<li><b>D</b> L&#x27;esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive.
+</li>
+</ul>
+<center><h3><b>Domanda 6</b></h3></center>
+	<domanda>
+		Dato il sequente programma:
+<pre>
+public class test {
+	public static void main(String args[]) {
+		int i=1, 
+		j=1; 
+		try {
+			i++;
+			j--;
+			if(i/j &gt; 1)
+			i++; 
+		}
+		catch(ArithmeticException e) { 
+			System.out.println(0);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(1); 
+		}
+		catch(Exception e) { 
+			System.out.println(2);
+		} 
+		finally {
+			System.out.println(3); 
+		}
+		System.out.println(4); 
+	}
+}
+</pre>
+Quale dei seguenti numeri viene stampato ?
+Scegliere una risposta.
+
+<ul>
+<li><b>A</b> 		2,6,6
+</li>
+<li><b>B</b> 		0,4
+</li>
+<li><b>C</b> 		0,3,4
+</li>
+<li><b>D</b> 		3,4,5
+</li>
+</ul>
+<center><h3><b>Domanda 7</b></h3></center>
+	<domanda>
+		La nozione di &quot;relazione&quot; &egrave; alla base del modello relazionale dei dati. Una sola delle seguenti affermazioni &egrave; vera. Quale?
+
+<ul>
+<li><b>A</b> 		Una relazione nel modello relazionale &egrave; definita come una relazione matematica, ovvero come un sottoinsieme del prodotto cartesiano di N insiemi di valori, dove N &egrave; il grado della relazione;
+</li>
+<li><b>B</b> 		Una relazione nel modello relazionale &egrave; un multiinsieme di tuple.
+</li>
+<li><b>C</b> 		Una relazione nel modello relazionale &egrave; una tabella che pu&ograve; essere anche infinita;
+</li>
+<li><b>D</b> 		Una relazione nel modello relazionale &egrave; definita come una relaziona matematica, ma con la differenza che le tuple che compongono la relazione (dette tuple) sono ordinate;
+</li>
+</ul>
+<center><h3><b>Domanda 8</b></h3></center>
+		A quale fra le seguenti categorie appartiene un grafo con n &gt; 1 nodi e m = 0 archi?
+
+<ul>
+<li><b>A</b> 		Grafo completo
+</li>
+<li><b>B</b> 		DAG
+</li>
+<li><b>C</b> 		Grafo fortemente connesso
+</li>
+<li><b>D</b> 		Grafo connesso
+</li>
+</ul>
+<center><h3><b>Domanda 9</b></h3></center>
+	<domanda>
+		Si consideri un processo con due autovalori in +1 e -1; quello in +1 &egrave; raggiungibile ed osservabile, mentre quello in -1 &egrave; irraggiungibile ed osservabile. Quali di queste affermazioni &egrave; corretta?
+
+<ul>
+<li><b>A</b> 		il processo &egrave; instabile e non &egrave; stabilizzabile asintoticamente;
+</li>
+<li><b>B</b> 		con un opportuno controllore sar&agrave; possibile controllare completamente il transitorio.
+</li>
+<li><b>C</b> 		il processo &egrave; stabile asintoticamente;
+</li>
+<li><b>D</b> 		il processo &egrave; instabile, ma &egrave; stabilizzabile asintoticamente;
+</li>
+</ul>
+<center><h3><b>Domanda 10</b></h3></center>
+	<domanda>
+		Il segmento STACK di un processo mantiene:
+
+<ul>
+<li><b>A</b> 		Il codice eseguibile su cui &egrave; basato il processo
+</li>
+<li><b>B</b> 		Le variabili con durata statica (es. variabili globali) di un programma
+</li>
+<li><b>C</b> 		I record di attivazione delle funzioni
+</li>
+<li><b>D</b> 		I blocchi allocati dinamicamente dal programma
+</li>
+</ul>
+</body></html>
